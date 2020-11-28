@@ -1,29 +1,33 @@
-import { example } from './data.js';
+import { buscarNumero, buscarTipo, buscarRaridade, buscarEstatisticas, buscarOrdemCrescente, buscarOrdemDecrescente } from './data.js';
 
 import data from './data/pokemon/pokemon.js';
 
-console.log(example, data);
-
-
-const pokemons = data.pokemon;
-
 function mostrarCards() {
-    for (let pokemon of pokemons){
-        const cards = document.querySelector('#mostrarCards');
+    
+    for (let pokemon of data.pokemon){
+        const cards = document.querySelector('#mostrar-cards');
 
-        const h2 = document.createElement("h2");
-        h2.innerHTML = pokemon.name
-        cards.appendChild(h2)
+        const div = document.createElement("div")
+        div.classList.add("div-cards")
 
         const imagem = document.createElement("img");
         imagem.src = pokemon.img
-        cards.appendChild(imagem)      
-
-        const tipo = document.createElement("type");
-        tipo.innerHTML = pokemon.type
-        cards.appendChild(tipo)
+        div.appendChild(imagem) 
+        div.classList.add("cards-imagens")
+        
+        const nome = document.createElement("h2");
+        nome.innerHTML = pokemon.name.toUpperCase()
+        div.appendChild(nome)
+        div.classList.add("cards-nomes")
+        
+        const tipo = document.createElement("p");
+        tipo.innerHTML = pokemon.type.join(", ").toUpperCase()
+        div.appendChild(tipo)
+        div.classList.add("cards-tipos")
       
+        cards.appendChild(div)
     }
+   
 
 }
 mostrarCards()
@@ -32,6 +36,8 @@ mostrarCards()
 
 
 // funções que se ligam com o html
+
+
 //document.querySelector(".sidebar").addEventListener("click", function);
 //const imagem = document.getElementsByClassName("pokemon.img")
 
