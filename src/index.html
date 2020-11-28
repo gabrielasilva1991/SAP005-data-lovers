@@ -10,7 +10,6 @@
     <div id="root"></div>
    
     <header class="title">
-      <!--<img src= "img/pokemon-logo-1.jpg" alt="some text" width=300 height=200>-->
       <img src= "img/pokemon-logo-1.jpg" alt="some text" id="logo"/>
     </header>
 
@@ -45,28 +44,27 @@
     <main class="flex-container">
 
       <section>
-        <select id="cboPokemon">
-          <option value="inicio">Ordenar por</option>
-          <option value="fraco">Ordenar por Mais Fraco</option>
-          <option value="elemento">Ordenar por Elemento</option>
-          <option value="maisForte">Ordenar por Mais Forte</option>
-          <option value="raridade">Ordenar por Raridade</option>
-          <option value="anterior"> Ordenar</option>              
+        <select id="ordenar-pokemon">
+          <option value=" ">Ordenar por</option>
+          <option value="numero">Ordenar por número</option>
+          <option value="raridade">Ordenar por raridade</option>
+          <option value="estatisticas">Ordenar por estatísticas</option> 
+          <option value="ordem-crescente">Ordenar A - Z </option> 
+          <option value="ordem-decrescente">Ordenar Z - A </option>
+
         </select>
   
-        <div id="bg">  
-
       </section>
 
       <section>
-        <div id="divBusca">
-          <input type="text" id="txtBusca" placeholder="Buscar..."/>
-          <img src="img/lupa.jpg" id="btnBusca" alt="Buscar"/>
+        <div id="div-busca">
+          <input type="text" id="txt-busca" placeholder="Buscar..."/>
+          <img src="img/lupa.jpg" id="btn-busca" alt="Buscar"/>
         </div>
       </section>
 
       <section>
-        <div class="cards" id=mostrarCards></div>      
+        <div class="cards" id=mostrar-cards></div>      
       </section>
 
     </main>
