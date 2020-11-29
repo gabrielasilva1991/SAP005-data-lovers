@@ -21,7 +21,7 @@ function mostrarCards() {
         div.classList.add("cards-nomes")
         
         const tipo = document.createElement("p");
-        tipo.innerHTML = pokemon.type.join(", ").toUpperCase()
+        tipo.innerHTML = pokemon.type.join(", ")
         div.appendChild(tipo)
         div.classList.add("cards-tipos")
       

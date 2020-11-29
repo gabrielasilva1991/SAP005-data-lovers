@@ -48,10 +48,13 @@ img{
 } 
 
 .sidebar h2{
-    margin: 5px;
-    position: relative;
-    align-items: center;
-    justify-content: center;
+    font-size:130%;
+	font-style: oblique;
+	padding-bottom:0%;
+	margin:0%;
+	color:rgb(255,255,255);
+    border-bottom: 4px solid rgb(155,155,155);
+    text-align: center;
 }
 
 .sidebar ul li{
@@ -62,7 +65,7 @@ img{
 
 .sidebar a:link{
     background: #c0e0fdfb;
-    color: #666;
+    color: rgb(15, 9, 9);
     font-weight: bold;
     text-decoration: none;
     padding: 6px;
@@ -81,53 +84,43 @@ img{
     justify-content: center;
     align-items: flex-start;
     width: 80%; /* 100% centraliza mais precisa subir e side bar já ocupa 15% */
+    margin-top: 40px
 }
 
 #ordenar-pokemon{
-    margin: auto;
+    margin-right: 50px; /*distancia do campo para o outro pelo lado direito*/
     -webkit-appearance: none;  /* Remove estilo padrão do Chrome */   
     -moz-appearance: none; /* Remove estilo padrão do FireFox */   
     appearance: none; /* Remove estilo padrão do FireFox*/   
     background: url(http://www.webcis.com.br/images/imagens-noticias/select/ico-seta-appearance.gif) no-repeat #eeecec;  /* Imagem de fundo (Seta) */   
     background-position: 218px center;  /*Posição da imagem do background*/   
-    width: 250px; /* Tamanho do select, maior que o tamanho da div "div-select" */   
-    height:30px; /* Altura do select, importante para que tenha a mesma altura em todo os navegadores */   
-    border:1px solid rgb(219, 218, 218);;
+    width: 250px; /*Tamanho do select*/   
+    height:30px; /*Altura do select, importante para ter a mesma altura em todos navegadores*/   
     text-align: left;
-  
+    font-size: 100%;  
 }
 
-#div-busca{
-    border-radius:15px;
-    width:250px;
-    height: 20px;
-    padding: 10px;
-    text-align: center;
-}
-  
-#txt-busca{
-    width: 200px; /*Largura do campo*/
-    height: 35px; /*Altura do campo*/
-    float: right; /*Posição do campo*/
-    margin-left: 30px;
-    background-image: url('img/ic_search_white_24dp_1x.png'); /*diretório e imagem do icone*/
-    background-position: left;  /*posição do icone*/
-    background-repeat: no-repeat; /*Não repetir o icone <- COLOCA ISSO PELO AMOR DE ODIN*/
-    background-color: #fff; /*Cor do fundo do campo*/
-    border: 2px solid #000; /*Cor da borda do campo*/
-    border-radius: 4px; /*Curvatura da borda nas "quinas"*/
-    text-indent: 25px; /*Um espaçamento para n atrapalhar a img*/
-
-    /* float:left;
-    background-color:transparent;
-    padding-left:5px;
-    font-style:italic;
-    font-size:18px;
-    border:none;
-    height:32px;
-    width:260px; */
+.div-busca form input{
+    width: 290px;
+    font-size: 100%;
+    padding: 7px;
+    border-width: 0px;
+    border-radius: 6px 0px 0px 6px; /*arredondamento dos cantos*/
 }
 
+.div-busca form button{
+    font-size: 100%;
+    padding: 7px;
+    border-width: 0px;
+    border-radius: 0px 6px 6px 0px;
+    margin-left: -4px;
+    background-color: #c0e0fdfb;
+    color: rgb(15, 1, 1);
+}
+
+.div-busca form button:hover{
+    cursor: pointer;
+}
 
 .cards{
     width: 70vw;
@@ -136,18 +129,19 @@ img{
     flex-wrap: wrap;
     flex-direction: row;
     margin: 30px;
-    justify-content: center;
+    justify-content: flex-end;
     align-content: center;
 }
 
 .div-cards{
+    width: 200vw;
+    height: 200px;
     margin: 10px;
     justify-content: center;
     background-color: #d6e8fafb;
     border-color: rgb(255, 252, 252);
     border-style: groove;
     border-radius: 10px;
-    transition: 0.5s ease;
     cursor: pointer;
     box-shadow: 0px 0px 8px rgb(255, 255, 255); /*sombra Deslocamento horizontal, vertical, esfumaçado, cor*/ 
     flex: 0 1 13%;  
@@ -162,26 +156,34 @@ img{
 
 .cards-imagens{    
     justify-content: center;
-    align-items: center;
+    align-items: center; 
 } 
 
 .cards-nomes{
     text-align: center; 
+    font-size: 10px;
     font-family: 'Source Sans Pro', sans-serif;
+    text-transform: uppercase;
 }
 
 .cards-tipos{
     text-align: center;
+    font-size: 10px;
     font-family: 'Source Sans Pro', sans-serif;
+    text-transform: uppercase;
 } 
 
 .rodape{
-    text-align: center;
-    position: fixed;
     flex-direction: row;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    font-size: 100%;
-    font-weight: bolder;
+    justify-content: center;
+    text-align: center; 
+    color: white;   
+}
+
+.rodape a:link{
+    background-color: rgb(245, 196, 196);
+}
+
+.rodape a:hover {
+    color:red;
 }
