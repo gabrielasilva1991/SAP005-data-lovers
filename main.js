@@ -27,7 +27,6 @@ function mostrarCards() {
       
         cards.appendChild(div)
     }
-   
 
 }
 mostrarCards()
@@ -45,3 +44,4 @@ mostrarCards()
 // console.log(h2)
 // console.log(imagem)
 // const div = `<div>${pokemon.name}</div>`
+
