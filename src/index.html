@@ -2,8 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Data Lovers</title>
+    <title>Pokémon Go</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">    
   </head>
 
   <body>
@@ -15,7 +16,7 @@
 
     <aside>
         <div class="sidebar">
-          <h2>Tipos de Pokémons</h2>
+          <h2>Selecione por tipo</h2>
           <nav>
             <ul>              
               <li><a href="# ">&#9776; Água</a></li>
@@ -51,20 +52,25 @@
           <option value="estatisticas">Ordenar por estatísticas</option> 
           <option value="ordem-crescente">Ordenar A - Z </option> 
           <option value="ordem-decrescente">Ordenar Z - A </option>
-
         </select>
   
       </section>
 
       <section>
-        <div id="div-busca">
-          <input type="text" id="txt-busca" placeholder="Buscar..."/>
-          <img src="img/lupa.jpg" id="btn-busca" alt="Buscar"/>
+        <div class="div-busca">
+          <form action="" method="submit" class="pesquisar">
+            <input type="search" placeholder="Buscar..."/>
+            <button type="submit">Buscar</button>
+          </form>
         </div>
       </section>
 
       <section>
-        <div class="cards" id=mostrar-cards></div>      
+        <div class="calculo-agregado"></div>
+      </section>
+
+      <section>
+        <div class="cards" id="mostrar-cards"></div>      
       </section>
 
     </main>
@@ -80,3 +86,4 @@
     <script src="main.js" type="module"></script>
   </body>
 </html>
+
