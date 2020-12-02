@@ -1,14 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
-@import url(tiny.css) (min-width:300px);
-@import url(small.css) (min-width:600px);
-@import url(big.css) (min-width:900px);
-
-@media screen and (max-width: 300px) {
- /* estilos */
+@media screen and (min-width: 480px) {
 }
-@media screen and (max-width: 600px) {
-/* Estilos */
+@media screen and (min-width: 767px) {
+}
+@media screen and (max-width: 768px) {
+}
+@media screen and (min-width: 320px) {
+}
+@media screen and (min-width: 1024px) {
+}
+@media screen and (max-width: 1024px) {
 }
 
 body{
