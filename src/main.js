@@ -1,15 +1,14 @@
-import { inputNome, selectNumero, selectTipo, calculoTipo, selectRaridade, ordenarCrescente, ordenarDecrescente } from './data.js';
+import { inputNome, selectNumeroCrescente, selectNumeroDecrescente, selectTipo, calculoTipo, selectNomeCrescente, selectNomeDecrescente } from './data.js';
 
 import data from './data/pokemon/pokemon.js';
 
 const pokemons = data.pokemon
 
 function mostrarPokemon(pokeFiltrado) {
+    let cards = document.querySelector('#mostrar-cards');
+    cards.innerHTML = "";
     
     for (let pokemon of pokeFiltrado){
-        const cards = document.querySelector('#mostrar-cards');
-        //cards.innerHTML = "";
-
         const div = document.createElement("div")
         div.classList.add("div-cards")
 
@@ -33,8 +32,8 @@ function mostrarPokemon(pokeFiltrado) {
 }
 mostrarPokemon(pokemons)
 
-const button = document.getElementById("buscar-poke");
-button.addEventListener("click", nomePokemon);
+const button = document.getElementById("buscar-poke"); //local onde acontece ação no html
+button.addEventListener("click", nomePokemon); 
 
 function nomePokemon(event) {
     event.preventDefault(); // parar execução padrão de um evento/ parar navegação padrão que o navegador ia atribuir ao evento / evita que o site carregue a opção sem que ela esteja com o nome digitado
@@ -67,23 +66,10 @@ function tipoPokemon(event) {
     const pokemonTipo = selectTipo(buscarTipo, data.pokemon);
     mostrarPokemon(pokemonTipo);
 
-    //console.log(pokemonTipo)
+    console.log(pokemonTipo)
 };
 
 // const tipoCalculo = 
-
-
-const raridade = document.getElementById("ordenar-pokemon");
-raridade.addEventListener("change", raridadePokemon);
-
-function raridadePokemon(event) {
-    event.preventDefault();
-    const buscarRaridade = document.getElementById("ordenar-tipo").value;
-    const pokemonRaridade = selectRaridade(buscarRaridade, data.pokemon);
-    mostrarPokemon(pokemonRaridade);
-
-    //console.log(pokemonRaridade) ==> está com erro
-};
 
 
 
