@@ -1,54 +1,91 @@
 export const inputNome = (buscarNome, array) => {
   return array.filter(pokemon => pokemon.name.startsWith(buscarNome));
-  // Quando começa a escrever ele vai mostrando sugestoes que começam com a letra
-  // O método startsWith() determina se uma string começa com os caracteres especificados, retornando true ou false.
-  // Esse método é case-sensitive (difere maiúsculas de minúsculas, e vice-versa). 
 };
 
-export const selectNumeroCrescente = (buscarNumero, array) => {
-  array.sort(function (a, b) {
-    if (a.name > b.name) return 1;
-    if (a.name < b.name) return -1;
-    return 0
-  });
-};
-  
-export const selectNumeroDecrescente = (buscarNumero, array) => {
-  array.sort(function (a, b) {
-    if (a.name > b.name) return -1;
-    if (a.name < b.name) return 1;
-    return 0
-  });
+export const menuSelectTipo = (buscarTipo, array) => {
+  return array.filter(pokemon => pokemon.type.includes(buscarTipo)); 
 };
 
-export const selectTipo = (buscarTipo, array) => {
-  return array.filter(pokemon => pokemon.type.includes(buscarTipo)); // checar se um array/objeto possui determinado valor/elemento.
-};
-
-
-export const calculoTipo = (buscarTipo, array) => {
-  const calculo = pokemons.filter(pokemon => pokemon.type.includes(buscarTipo));
+export const calculoTipo = (totalPokeTipo, array) => {
+  ((totalPokeTipo / array) * 100);
   
 };
-
-export const selectNomeCrescente = (ordenarCrescente, array ) => {
-  array.sort(function (a, b) {
-    if (a.name > b.name) return 1;
-    if (a.name < b.name) return -1;
-    return 0
-  });
+  
+const ordenarNumero = (a, b) => {
+  if (a.name > b.name) {
+    return 1;
+  } if (a.name < b.name) {
+    return -1;
+  }
+  return 0
 };
 
-export const selectNomeDecrescente = (ordenarDecrescente, array ) => { 
-  array.sort(function (a, b) {
-    if (a.name > b.name) return -1;
-    if (a.name < b.name) return 1;
-    return 0
-  });
+export const selectNumeroCrescente = (array) => {
+  array.sort(ordenarNumero);
+}
+
+export const selectNumeroDecrescente = (array) => {
+  array.sort(ordenarNumero).reverse();
 };
+
+
+const ordenarNome = (a, b) => {
+  if (a.name > b.name) {
+    return 1;
+  } if (a.name < b.name) {
+    return -1;
+  }
+  return 0
+};
+
+export const selectNomeCrescente = (array) => {
+  array.sort(ordenarNome);
+}
+
+export const selectNomeDecrescente = (array) => {
+  array.sort(ordenarNome).reverse();
+};
+
+
+
+// export const selectNumeroCrescente = (ordenarNumeroCrescente, array) => {
+//   array.sort(function (a, b) {
+//     if (a.name > b.name) return 1;
+//     if (a.name < b.name) return -1;
+//     return 0
+//   });
+// };
+  
+// export const selectNumeroDecrescente = (ordenarNumeroDecrescente, array) => {
+//   array.sort(function (a, b) {
+//     if (a.name > b.name) return -1;
+//     if (a.name < b.name) return 1;
+//     return 0
+//   });
+// };
+
+// export const selectNomeCrescente = (ordenarNomeCrescente, array ) => {
+//   array.sort(function (a, b) {
+//     if (a.name > b.name) return 1;
+//     if (a.name < b.name) return -1;
+//     return 0
+//   });
+// };
+
+// export const selectNomeDecrescente = (ordenarNomeDecrescente, array ) => { 
+//   array.sort(function (a, b) {
+//     if (a.name > b.name) return -1;
+//     if (a.name < b.name) return 1;
+//     return 0
+//   });
+// };
 
 //funções que fazem ordenação e filtro
-//return data.filter((pokemon) => pokemon.type.includes(buscarTipo));
-//return agua = data.filter((pokemon) => pokemon.type === 'water'));
-//Água Dragão Elétrico Fada Fantasma Fogo Gelo Inseto Lutador Metálico Normal Noturno Pedra Planta Psíquico Terrestre Venenoso Voador
-//water dragon electric fairy fire ice bug fighting metallic normal dark psychic grass ground poison flying
+
+//include 
+// checar se um array/objeto possui determinado valor/elemento.
+
+//startsWith 
+// Quando começa a escrever ele vai mostrando sugestoes que começam com a letra
+// O método startsWith() determina se uma string começa com os caracteres especificados, retornando true ou false.
+// Esse método é case-sensitive (difere maiúsculas de minúsculas, e vice-versa). 
