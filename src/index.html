@@ -16,44 +16,105 @@
     </header>
 
     <aside>
-        <div class="sidebar" id="ordenar-tipo"> 
+      <div class="sidebar">
+        <h2>Selecione por tipo</h2>
+        <nav>
+          <ul>
+            <!-- <select >
+              <option value="water">Água</option>
+            </select> -->                
+            <li><a href="# ">&#9776; Água</a></li>
+            <li><a href="# ">&#9776; Dragão</a></li>
+            <li><a href="# ">&#9776; Elétrico</a></li>
+            <li><a href="# ">&#9776; Fada</a></li>
+            <li><a href="# ">&#9776; Fantasma</a></li>
+            <li><a href="# ">&#9776; Fogo</a></li>
+            <li><a href="# ">&#9776; Gelo</a></li>
+            <li><a href="# ">&#9776; Inseto</a></li>
+            <li><a href="# ">&#9776; Lutador</a></li>  
+            <li><a href="# ">&#9776; Metálico</a></li>
+            <li><a href="# ">&#9776; Normal</a></li>
+            <li><a href="# ">&#9776; Noturno</a></li>
+            <li><a href="# ">&#9776; Pedra</a></li> 
+            <li><a href="# ">&#9776; Planta</a></li> 
+            <li><a href="# ">&#9776; Psíquico</a></li>
+            <li><a href="# ">&#9776; Terrestre</a></li>
+            <li><a href="# ">&#9776; Venenoso</a></li>
+            <li><a href="# ">&#9776; Voador</a></li>
+          </ul>
+        </nav>
+      </div>
+  </aside>
+
+    <!-- <aside>
+        <div class="sidebar"> 
           <h2>Selecione por tipo</h2>
           <nav>
-            <ul>              
-              <li><a href="# ">&#9776; Água</a></li>
-              <li><a href="# ">&#9776; Dragão</a></li>
-              <li><a href="# ">&#9776; Elétrico</a></li>
-              <li><a href="# ">&#9776; Fada</a></li>
-              <li><a href="# ">&#9776; Fantasma</a></li>
-              <li><a href="# ">&#9776; Fogo</a></li>
-              <li><a href="# ">&#9776; Gelo</a></li>
-              <li><a href="# ">&#9776; Inseto</a></li>
-              <li><a href="# ">&#9776; Lutador</a></li>  
-              <li><a href="# ">&#9776; Metálico</a></li>
-              <li><a href="# ">&#9776; Normal</a></li>
-              <li><a href="# ">&#9776; Noturno</a></li>
-              <li><a href="# ">&#9776; Pedra</a></li> 
-              <li><a href="# ">&#9776; Planta</a></li> 
-              <li><a href="# ">&#9776; Psíquico</a></li>
-              <li><a href="# ">&#9776; Terrestre</a></li>
-              <li><a href="# ">&#9776; Venenoso</a></li>
-              <li><a href="# ">&#9776; Voador</a></li>
+            <ul>
+              <button id="ordenar-tipo" classe="ordenar-tipo" value="water">Água</button>
+              <button id="ordenar-tipo" classe="ordenar-tipo" value="dragon">Dragão</button>
+              <button id="ordenar-tipo" classe="ordenar-tipo" value="electric">Elétrico</button>
+              <button id="ordenar-tipo" classe="ordenar-tipo" value="fairy">Fada</button>
+              <button id="ordenar-tipo" classe="ordenar-tipo" value="ghost">Fantasma</button>
+              <button id="ordenar-tipo" classe="ordenar-tipo" value="fire">Fogo</button>
+              <button id="ordenar-tipo" classe="ordenar-tipo" value="ice">Gelo</button>
+              <button id="ordenar-tipo" classe="ordenar-tipo" value="bug">Inseto</button>
+              <button id="ordenar-tipo" classe="ordenar-tipo" value="fighting">Lutador</button>
+              <button id="ordenar-tipo" classe="ordenar-tipo" value="stell">Metálico</button>
+              <button id="ordenar-tipo" classe="ordenar-tipo" value="normal">Normal</button>
+              <button id="ordenar-tipo" classe="ordenar-tipo" value="dark">Noturno</button>
+              <button id="ordenar-tipo" classe="ordenar-tipo" value="rock">Pedra</button>
+              <button id="ordenar-tipo" classe="ordenar-tipo" value="grass">Planta</button>
+              <button id="ordenar-tipo" classe="ordenar-tipo" value="psychic">Psíquico</button>
+              <button id="ordenar-tipo" classe="ordenar-tipo" value="ground">Terrestre</button>
+              <button id="ordenar-tipo" classe="ordenar-tipo" value="poison">Venenoso</button>
+              <button id="ordenar-tipo" classe="ordenar-tipo" value="flying">Voador</button>
             </ul>
           </nav>
         </div>
-    </aside>
+    </aside> -->
+
+    <section>
+      <div>
+        <select class="ordenar-tipo" id="ordenar-tipo">
+            <option value=" ">Selecionar por Tipo</option>
+            <option value="water">Água</option>
+            <option value="dragon">Dragão</option>
+            <option value="electric">Elétrico</option>
+            <option value="fairy">Fada</option>
+            <option value="ghost">Fantasma</option>
+            <option value="fire">Fogo</option>
+            <option value="ice">Gelo</option>
+            <option value="bug">Inseto</option>
+            <option value="fighting">Lutador</option>
+            <option value="stell">Metálico</option>
+            <option value="normal">Normal</option>
+            <option value="dark">Noturno</option>
+            <option value="rock">Pedra</option>
+            <option value="grass">Planta</option>
+            <option value="psychic">Psíquico</option>
+            <option value="ground">Terrestre</option>
+            <option value="poison">Venenoso</option>
+            <option value="flying">Voador</option>             
+            
+        </select>
+    </div>
+    </section>
+
 
     <!-- <button class="recarregar-pagina" id="recarregar-pagina">Carregar todos os Pokémons</button> -->
 
+    
+    
     <main class="flex-container">
 
       <section>
-        <select id="ordenar-pokemon">
+        <select class="ordenar" id="ordenar-pokemon">
           <option value=" ">Ordenar por</option>
           <option value="numero-crescente">Ordenar de 01 a 251 </option>
           <option value="numero-decrescente">Ordenar de 251 a 01 </option>
-          <option value="ordem-crescente">Ordenar de A - Z </option> 
-          <option value="ordem-decrescente">Ordenar de Z - A </option>
+          <option value="nome-crescente">Ordenar de A - Z </option> 
+          <option value="nome-decrescente">Ordenar de Z - A </option>
         </select>
   
       </section>
@@ -69,7 +130,7 @@
 
       
       <section>
-        <div class="calculo-agregado" id="calculo-agregado"></div>
+        <div class="calculo" id="calculo-agregado"></div>
       </section>
 
       
