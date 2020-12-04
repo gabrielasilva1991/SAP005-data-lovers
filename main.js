@@ -44,7 +44,38 @@ function nomePokemon(event) {
     //console.log(pokemonNome)
 };
 
-const numero = document.getElementById("ordenar-pokemon");
+const ordenarPokemon = document.querySelector("#ordenar-pokemon");
+ordenarPokemon.addEventListener("change", pokemonOrdenar); 
+const ordenar = ordenarPokemon.value;
+
+function pokemonOrdenar() {
+    if (ordenar === "numero-crescente") {
+        document.getElementById("ordenar-pokemon").value;
+        selectNumeroCrescente (data.pokemon);
+        mostrarPokemon(data.pokemon);
+    
+    } else if (ordenar === "numero-decrescente") {
+        document.getElementById("ordenar-pokemon").value;
+        selectNumeroDecrescente (data.pokemon);
+        mostrarPokemon(data.pokemon);
+    
+    } else if (ordenar === "nome-crescente") {
+        document.getElementById("ordenar-pokemon").value;
+        selectNomeCrescente(data.pokemon);
+        mostrarPokemon(data.pokemon);
+    
+    } else if (ordenar === "nome-decrescente") {
+        document.getElementById("ordenar-pokemon").value;
+        selectNomeDecrescente(data.pokemon);
+        mostrarPokemon(data.pokemon);
+
+        console.log(pokemonOrdenar);
+    }
+}
+
+
+
+/*const numero = document.getElementById("ordenar-pokemon");
 numero.addEventListener("change", numeroPokemon);
 
 function numeroPokemon(event) {
@@ -68,7 +99,7 @@ function tipoPokemon(event) {
 
     console.log(pokemonTipo)
 };
-
+*/
 // const tipoCalculo = 
 
 
