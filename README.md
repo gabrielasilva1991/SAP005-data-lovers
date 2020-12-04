@@ -1,9 +1,8 @@
-# Data Lovers
+# Data Lovers - Tema Pokemón
 
 ## Índice
 
-* [1. Preâmbulo](#1-preâmbulo)
-* [2. Resumo do projeto](#2-resumo-do-projeto)
+* [1. Resumo do projeto](#1-resumo-do-projeto)
 * [3. Objetivos de aprendizagem](#3-objetivos-de-aprendizagem)
 * [4. Considerações gerais](#4-considerações-gerais)
 * [5. Critérios mínimos de aceitação do
@@ -16,149 +15,46 @@
 
 ***
 
-## 1. Preâmbulo
 
-Segundo a
-[Forbes](https://www.forbes.com/sites/bernardmarr/2018/05/21/how-much-data-do-we-create-every-day-the-mind-blowing-stats-everyone-should-read)
-90% dos dados que existem hoje foram gerados durante os últimos dois anos. A
-cada dia geramos 2.5 milhões de terabytes de dados, uma cifra sem precedentes.
+## 1. Projeto
 
-Apesar disso, os dados por si só são de pouca utilidade. Para que essas grandes
-quantidades de dados se convertam em **informação** compreensível para os
-usuários, precisamos entender e processar estes dados. Uma forma simples de
-fazer isso é criando _interfaces_ e _visualizações_.
+  Construimos uma página web como o tema Pokemon, para que nossos usuários tenham 
+acesso rápido a informações técnicas de Pokemons, tipo nome, características,
+de qual categoria ele pertence, nivel de força, comparação de pokemons, tamanho, raridade, tudo que um 
+treinador de pokemon deve saber. Inclusive, Equipe Rocket #ficadica
+<img src="https://www.memenews.com.br/wp-content/uploads/2019/11/meme-2-14-11-19.gif" width="150" height="150" />
 
-Na imagem seguinte, você pode ver como os dados que estão na parte esquerda
-podem ser usados para construir a interface amigável e compreensível que está na
-parte direita.
 
-![json-interface](https://lh4.googleusercontent.com/Tn-RPXS26pVvOTdUzRT1KVaJ-_QbFs9SpcGLxSPE43fgbHaXtFgMUInuDt7kV41DkT1j8Tt29V0LxQW7SMtC6digOIhfTXSBKdwI08wUwhD3RAqlwy0hjfmhZ2BFe91mtmCSEqysfgk)
+## 2. O que estamos usando e aprendendo nesta aplicação?
+![](https://i.pinimg.com/originals/35/98/8b/35988bf09ce2be958e36f4bc8f4575d1.gif")
 
-## 2. Resumo do projeto
+De acordo com as necessidades do usuário, desenvolvemos uma interface web onde 
+se visualiza e manipula dados.Usamos HTML semântico, flexbox e seletores de CSS,
+em JS manipulamos eventos e seletores de DOM, usamos também for of, arrays, objetos.
 
-Neste projeto você **construirá uma _página web_ para visualizar um _conjunto
-(set) de dados_** que se adeque às necessidades de seu usuário.
 
-Como entregável final terá uma página web que permita **visualizar dados,
-filtrá-los, ordená-los e fazer algum cálculo agregado**. Por cálculo agregado
-nos referimos aos diversos cálculos que podem ser feitos com os dados para
-mostrar a informação mais relevante para os usuários (médias, valores máximos e
-mínimos, etc).
+## 5. Critérios mínimos de aceitação do projeto :female-technologist::skin-tone-5::female-technologist::skin-tone-2:
 
-Para este projeto trazemos uma série de dados de _temáticas diferentes_ para que
-você explore e decida com qual delas deseja trabalhar. Escolhemos
-especificamente estes conjuntos de dados porque cremos que se adequem bem a esta
-etapa de sua aprendizagem.
+### Histórias de usuário
 
-Uma vez que você defina sua área de interesse, busque entender quem é seu
-usuário e o que exatamente ele necessita saber ou ver, para que assim possa
-construir a interface que o ajude a interagir e entender melhor os dados.
+Diante da resposta dos usuários em nosso formulário, notamos a necessidade de uma 
+aplicação web que exibisse, a raridade dos pokemons, suas comparações, evoluções, 
+seus tipos, suas fraquesas e resistências.
 
-Este são os dados que propomos:
+### Desenho de interface do usuário
 
-* [Pokémon](src/data/pokemon/pokemon.json): Neste conjunto você encontrará uma
-  lista com os 151 Pokémon da região de Kanto, com suas respectivas estatísticas
-  utilizadas no jogo [Pokémon GO](http://pokemongolive.com).
-  - [Pesquisa com jogadores de Pokémon Go](src/data/pokemon/README.pt-BR.md)
 
-* [League of Legends - Challenger leaderboard](src/data/lol/lol.json): Este
-  conjunto mostra a lista de jogadores de uma liga do jogo League of Legends
-  (LoL).
-  - [Pesquisa com jogadores de LoL](src/data/lol/README.pt-BR.md)
+#### Protótipo de baixa fidelidade
 
-* [Rick and Morty](src/data/rickandmorty/rickandmorty.json). Lista de
-  personagens da série Rick & Morty. Você pode revisar a documentação da API
-  neste [link](https://rickandmortyapi.com).
-  - [Pesquisa com seguidores de Rick and
-    Morty](src/data/rickandmorty/README.pt-BR.md)
+Na imagem abaixo é o primeiro escopo do projeto, inclusive mudanças ocorreram, para que melhor atendesse a necessidade dos usuários.
+![readme](escopo_one.png)
 
-## 3. Objetivos de aprendizagem
-
-O objetivo principal deste projeto é que aprenda a desenhar e construir uma
-interface web onde se possa visualizar e manipular dados, entendendo o que o
-usuário necessita.
-
-Em outras palavras, você aprenderá a:
-
-### HTML e CSS
-
-* [ ] [Uso de HTML semântico.](https://developer.mozilla.org/en-US/docs/Glossary/Semantics#Semantics_in_HTML)
-* [ ] Uso de seletores de CSS.
-* [ ] Construir sua aplicação respeitando o desenho realizado (protótipo).
-* [ ] [Uso de flexbox em CSS.](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
-
-### DOM e Web APIs
-
-* [ ] Uso de seletores de DOM.
-* [ ] Gerenciamento de eventos de DOM.
-* [ ] [Manipulação dinâmica de DOM.](https://developer.mozilla.org/pt-BR/docs/DOM/Referencia_do_DOM/Introdu%C3%A7%C3%A3o)
-(appendChild |createElement | createTextNode| innerHTML | textContent | etc.)
-
-### JavaScript
-
-* [ ] Uso de condicionais (if-else | switch | operador ternário)
-* [ ] Uso de laços (for | for..in | for..of | while)
-* [ ] Uso de funções (parâmetros | argumentos | valor de retorno)
-* [ ] Manipular arrays (filter | map | sort | reduce)
-* [ ] Manipular objects (key | value)
-* [ ] Uso ES modules ([`import`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import)
-| [`export`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/export))
-* [ ] Diferenciar entre expression e statements.
-* [ ] Diferenciar entre tipos de dados atômicos e estruturados.
+Já nessa segunda imagem, temos um protótipo após as devidas alterações para melhoria do mesmo.
+![readme](protótipo.png)
 
 ### Testing
 
 * [ ] [Teste unitário.](https://jestjs.io/docs/pt-BR/getting-started)
-
-### Estrutura do código e guia de estilo
-
-* [ ] Organizar e dividir o código em módulos (Modularização)
-* [ ] Uso de identificadores descritivos (Nomenclatura | Semântica)
-* [ ] Uso de linter (ESLINT)
-
-### Git e GitHub
-
-* [ ] Uso de comandos de git (add | commit | pull | status | push)
-* [ ] Gerenciar repositórios de GitHub (clone | fork | gh-pages)
-* [ ] Colaboração no Github (branches | pull requests | |tags)
-
-## 4. Considerações gerais
-
-* Este projeto será executado em duplas.
-* Este projeto será entregue através do GitHub e a interface deve ser publicada
-  no [GitHub Pages](https://pages.github.com/).
-* Tempo para completá-lo: 3 semanas.
-
-## 5. Critérios mínimos de aceitação do projeto
-
-Os critérios considerados para que tenha terminado este projeto são:
-
-### Definição de produto
-
-Documente brevemente seu trabalho no arquivo `README.md` de seu repositório,
-contando como foi o processo de desenho e como você acredita que o produto possa
-resolver o problema (ou problemas) de seu usuário.
-
-### Histórias de usuário
-
-Uma vez que entenda a necessidade dos usuários, escreva as [Historias de
-Usuario](https://pt.wikipedia.org/wiki/Hist%C3%B3ria_de_usu%C3%A1rio) que
-representem tudo que o usuário precisa fazer/ver. As **histórias de usuário**
-devem ser o resultado de seu processo de investigação/pesquisa de seus usuários.
-
-Não esqueça de incluir a definição de pronto (_definition of done_) e os
-critérios de aceitação para cada uma.
-
-Na medida do possível, termine uma história de usuário antes de passar para a
-seguinte (cumpra com as definições de pronto + critérios de aceitação).
-
-### Desenho de interface do usuário
-
-#### Protótipo de baixa fidelidade
-
-Durante seu trabalho você deverá fazer e iterar rascunhos de sua solução usando
-lápis e papel. Recomendamos que fotografe todas as iterações que fizer, suba
-para seu repositório e as mencione no `README.md`.
 
 #### Testes de usabilidade
 
@@ -167,20 +63,14 @@ diferentes, e com base nos resultados desses testes, iterar seus desenhos de
 interface. Conte-nos quais problemas de usabilidade você detectou através dos
 testes e como os resolveu na proposta final.
 
-### Implementação da interface de usuário (HTML/CSS/JS)
 
-Após desenhar sua interface de usuário, deverá trabalhar na sua implementação.
-**Não** é necessário que construa a interface exatamente da mesma forma que
-desenhou. Terá um tempo limitado para trabalhar no projeto, então você deve
-priorizar as tarefas.
+### O que já implementamos no projeto? :heavy_check_mark:
 
-No mínimo, sua implementação deverá:
 
-1. Mostrar os dados em uma interface: pode ser em cards, tabelas, listas, etc.
-2. Permitir ao usuário interagir com a interface para obter as informações que
-   necessita;
-3. Ser _responsiva_, ou seja, deve ser visualizada sem problemas a partir de
-   diversos tamanhos de tela: celulares, tablets, notebooks, etc.
+1. Mostramos os cards com os dados do Pokemon na interface.
+2. Usuário consegue filtrar por tipo e ordenar em ordem crescente e decrescente
+do alfabeto.
+3. Responsividade ok 
 
 ### Testes unitários
 
@@ -192,6 +82,14 @@ Seus testes unitários devem ter cobertura mínima de 70% de _statements_
 (_sentenças_), _functions_ (_funções_), _lines_ (_linhas_), e _branches_
 (_ramos_) do arquivo `src/data.js`, que irá conter suas funções e que está
 detalhado na seção de [Considerações técnicas](#srcdatajs).
+
+## 4. Considerações gerais
+
+* Este projeto será executado em duplas.
+* Este projeto será entregue através do GitHub e a interface deve ser publicada
+  no [GitHub Pages](https://pages.github.com/).
+* Tempo para completá-lo: 3 semanas.
+
 
 ## 6. Hacker edition
 
