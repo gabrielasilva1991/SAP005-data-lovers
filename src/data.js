@@ -30,22 +30,34 @@ export const calculoTipo = (buscarTipo, array) => {
   const calculo = pokemons.filter(pokemon => pokemon.type.includes(buscarTipo));
   
 };
+    
+    export const selectNomeCrescente = (array) => {
+      const ordenarNome = (a, b) => {
+        if (a.name > b.name) {
+          return 1;
+        } if (a.name < b.name) {
+          return -1;
+        }
+        return 0;
+      }
+      array.sort(ordenarNome);
+    }
 
-export const selectNomeCrescente = (ordenarCrescente, array ) => {
-  array.sort(function (a, b) {
-    if (a.name > b.name) return 1;
-    if (a.name < b.name) return -1;
-    return 0
-  });
-};
+    export const selectNomeDecrescente = (array) => {
+      const ordenarNome = (a, b) => {
+        if (a.name > b.name) {
+          return -1;
+        } if (a.name < b.name) {
+          return 1;
+        }
+        return 0
+      }
+      array.sort(ordenarNome);
+    }
 
-export const selectNomeDecrescente = (ordenarDecrescente, array ) => { 
-  array.sort(function (a, b) {
-    if (a.name > b.name) return -1;
-    if (a.name < b.name) return 1;
-    return 0
-  });
-};
+    
+
+
 
 //funções que fazem ordenação e filtro
 //return data.filter((pokemon) => pokemon.type.includes(buscarTipo));
