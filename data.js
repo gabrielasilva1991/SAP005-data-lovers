@@ -30,6 +30,7 @@ export const selectNumeroDecrescente = (array) => {
   return array.sort(ordenarNumero).reverse();
 };
 
+
 const ordenarNome = (a, b) => {
   if (a.name > b.name) {
     return 1;
@@ -46,7 +47,6 @@ export const selectNomeCrescente = (array) => {
 export const selectNomeDecrescente = (array) => {
   return array.sort(ordenarNome).reverse();
 };
-
 
 //funções que fazem ordenação e filtro
 
