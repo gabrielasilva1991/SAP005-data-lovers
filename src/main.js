@@ -50,125 +50,37 @@ function nomePokemon(event) {
     //console.log(pokemonNome)
 };
 
-
-const tipo = document.getElementById("ordenar-tipo");
-tipo.addEventListener("click", tipoPokemon);
-
-function tipoPokemon(event) {
-    event.preventDefault();
-    const buscarTipo = document.getElementById("ordenar-tipo").value;
-    const pokemonTipo = menuSelectTipo(buscarTipo, data.pokemon);
-    mostrarPokemon(pokemonTipo);
-
-   //console.log(event.target)
-};
-
-
-const tipoCalculo = document.getElementById("calculo-agregado");
-tipoCalculo.addEventListener("onchange", calculo); // assim que mudar o seletor executa a função
-
-function calculo() {
-    const tipoBuscar = document.getElementById("calculo-agregado").value;
-    const tipoPokemon = menuSelectTipo(buscarTipo, data.pokemon);
-    const calculoTipo = calculoTipo(totalPokeTipo.length, data.pokemon.length).toFixed(2); //casas usadas depois da virgula
-    document.getElementById("calculo-agregado").innerHTML = 
-    `<div>Os Pokémons de tipo ${tipoBuscar} representam ${calculoTipo} % do total de Pokémons.</div>`
-    mostrarPokemon(tipoPokemon);
-
-    console.log(tipoPokemon)
-};
-
-
-
-
-
-
-
-const ordenarPokemon = document.getElementById("ordenar-pokemon");
-ordenarPokemon.addEventListener("change", pokemonOrdenar);
+const ordenarPokemon = document.querySelector("#ordenar-pokemon");
+ordenarPokemon.addEventListener("change", pokemonOrdenar); 
+const ordenar = ordenarPokemon.value;
 
 function pokemonOrdenar() {
-
-    if ("numero-crescente") {
+    if (ordenar === "numero-crescente") {
         document.getElementById("ordenar-pokemon").value;
-        selectNumeroCrescente(data.pokemon);
+        selectNumeroCrescente (data.pokemon);
         mostrarPokemon(data.pokemon);
     
-    } else if ("numero-decrescente") {
+    } else if (ordenar === "numero-decrescente") {
         document.getElementById("ordenar-pokemon").value;
-        selectNumerodecrescente(data.pokemon);
+        selectNumeroDecrescente (data.pokemon);
         mostrarPokemon(data.pokemon);
     
-    } else if ("nome-crescente") {
+    } else if (ordenar === "nome-crescente") {
         document.getElementById("ordenar-pokemon").value;
         selectNomeCrescente(data.pokemon);
         mostrarPokemon(data.pokemon);
     
-    } else if ("nome-decrescente") {
+    } else if (ordenar === "nome-decrescente") {
         document.getElementById("ordenar-pokemon").value;
         selectNomeDecrescente(data.pokemon);
         mostrarPokemon(data.pokemon);
+
+        console.log(pokemonOrdenar);
     }
-};
+}
 
 
 
 
 
 
-
-
-// const numeroCrescente = document.getElementById("ordenar-pokemon");
-// numeroCrescente.addEventListener("change", numeroPokemonCrescente);
-
-// function numeroPokemonCrescente(event) {
-//     event.preventDefault();
-//     const ordenarNumeroCrescente = document.getElementById("ordenar-pokemon").value;
-//     const pokemonNumeroCrescente = selectNumeroCrescente(ordenarNumeroCrescente, data.pokemon);
-//     mostrarPokemon(pokemonNumeroCrescente);
-
-//     //console.log(pokemonNumeroCrescente)
-// };
-
-
-// const numeroDecrescente = document.getElementById("ordenar-pokemon");
-// numeroDecrescente.addEventListener("change", numeroPokemonDecrescente);
-
-// function numeroPokemonDecrescente(event) {
-//     event.preventDefault();
-//     const ordenarNumeroDecrescente = document.getElementById("ordenar-pokemon").value;
-//     const pokemonNumeroDecrescente = selectNumeroDecrescente(ordenarNumeroDecrescente, data.pokemon);
-//     mostrarPokemon(pokemonNumeroDecrescente);
-
-//     //console.log(pokemonNumeroDecrescente)
-// };
-
-
-// const nomeCrescente = document.getElementById("ordenar-pokemon");
-// nomeCrescente.addEventListener("change", nomePokemonCrescente);
-
-// function nomePokemonCrescente(event) {
-//     event.preventDefault();
-//     const ordenarNomeCrescente = document.getElementById("ordenar-pokemon").value;
-//     const pokemonNomeCrescente = selectNumero(ordenarNomeCrescente, data.pokemon);
-//     mostrarPokemon(pokemonNomeCrescente);
-
-//     //console.log(pokemonNomeCrescente)
-// };
-
-
-// const nomeDecrescente = document.getElementById("ordenar-pokemon");
-// nomeDecrescente.addEventListener("change", nomePokemonDecrescente);
-
-// function nomePokemonDecrescente(event) {
-//     event.preventDefault();
-//     const ordenarNomeDecrescente = document.getElementById("ordenar-pokemon").value;
-//     const pokemonNomeDecrescente = selectNumero(ordenarNomeDecrescente, data.pokemon);
-//     mostrarPokemon(pokemonNomeDecrescente);
-
-//     //console.log(pokemonNomeDecrescente)
-// };
- 
-
-// funções que se ligam com o html
-// const div = `<div>${pokemon.name}</div>`

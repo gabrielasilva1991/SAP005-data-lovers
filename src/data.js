@@ -27,8 +27,32 @@ export const selectNumeroCrescente = (array) => {
 export const selectNumeroDecrescente = (array) => {
   array.sort(ordenarNumero).reverse();
 };
+    
+    export const selectNomeCrescente = (array) => {
+      const ordenarNome = (a, b) => {
+        if (a.name > b.name) {
+          return 1;
+        } if (a.name < b.name) {
+          return -1;
+        }
+        return 0;
+      }
+      array.sort(ordenarNome);
+    }
 
+    export const selectNomeDecrescente = (array) => {
+      const ordenarNome = (a, b) => {
+        if (a.name > b.name) {
+          return -1;
+        } if (a.name < b.name) {
+          return 1;
+        }
+        return 0
+      }
+      array.sort(ordenarNome);
+    }
 
+    
 const ordenarNome = (a, b) => {
   if (a.name > b.name) {
     return 1;
@@ -45,6 +69,7 @@ export const selectNomeCrescente = (array) => {
 export const selectNomeDecrescente = (array) => {
   array.sort(ordenarNome).reverse();
 };
+
 
 
 

@@ -2,7 +2,9 @@
 
 ## Índice
 
-* [1. Resumo do projeto](#1-resumo-do-projeto)
+* [1. Projeto](#1-projeto)
+* [2. Desenvolvimento do Projeto](#2-desenvolvimento-do-projeto)
+
 * [3. Objetivos de aprendizagem](#3-objetivos-de-aprendizagem)
 * [4. Considerações gerais](#4-considerações-gerais)
 * [5. Critérios mínimos de aceitação do
@@ -52,16 +54,26 @@ Na imagem abaixo é o primeiro escopo do projeto, inclusive mudanças ocorreram,
 Já nessa segunda imagem, temos um protótipo após as devidas alterações para melhoria do mesmo.
 ![readme](protótipo.png)
 
+
 ### Testing
 
 * [ ] [Teste unitário.](https://jestjs.io/docs/pt-BR/getting-started)
 
+
+## 4. Necessidade do Usuário.
+
+Diante da resposta dos usuários em nosso formulário, notamos a necessidade de uma aplicação web que exibisse, a raridade dos pokemons, suas comparações, evoluções, seus tipos, suas fraquesas e resistências.
+
+### Desenho de interface do usuário
+![Escopo](SAP005-data-lovers/readme/escopo_one.jpg)
+
+#### Protótipo de baixa fidelidade
+
+![alt text](http://readme/escopo_one.png)
+
 #### Testes de usabilidade
 
-Durante o desafio você deverá fazer testes de usabilidade com usuários
-diferentes, e com base nos resultados desses testes, iterar seus desenhos de
-interface. Conte-nos quais problemas de usabilidade você detectou através dos
-testes e como os resolveu na proposta final.
+Durante o desafio você deverá fazer testes de usabilidade com usuários diferentes, e com base nos resultados desses testes, iterar seus desenhos de interface. Conte-nos quais problemas de usabilidade você detectou através dos testes e como os resolveu na proposta final.
 
 
 ### O que já implementamos no projeto? :heavy_check_mark:
@@ -109,47 +121,11 @@ Features/características extra sugeridas:
   Charts](https://developers.google.com/chart/).
 * 100% de cobertura nos testes.
 
-## 7. Considerações técnicas
+## 7. Mas de quem foram as mãos desenvolvedoras ?
 
-A lógica do projeto deve estar implementada somente em JavaScript (ES6), HTML e
-CSS. Neste projeto não está permitido o uso de bibliotecas e frameworks, apenas
-[vanilla
-JavaScript](https://medium.com/laboratoria-how-to/vanillajs-vs-jquery-31e623bbd46e),
-com exceção das bibliotecas para gráficos (ver [_Parte
-opcional_](#6-hacker-edition) acima).
+Essa aplicação foi desenvolvida por Gabriela [Link Gabi](https://github.com/gabrielasilva1991o) e por Mayara [Link Maya](https://github.com/apretamayara)
 
-Não se deve utilizar a _pseudo-variável_ `this`.
 
-O _boilerplate_ contém uma estrutura de arquivos como ponto de partida, assim
-como toda a configuração de dependências:
-
-```text
-.
-├── EXTRA.md
-├── README.md
-├── package.json
-├── src
-|  ├── data (de acordo com o data que forem trabalhar)
-|  |  ├── lol
-|  |  |  ├── lol.js
-|  |  |  ├── lol.json
-|  |  |  └── README.md
-|  |  ├── pokemon
-|  |  |  ├── pokemon.js
-|  |  |  ├── pokemon.json
-|  |  |  └── README.md
-|  |  └── rickandmorty
-|  |     ├── rickandmorty.js
-|  |     └── rickandmorty.json
-|  |     └── README.md
-|  ├── data.js
-|  ├── index.html
-|  ├── main.js
-|  └── style.css
-└── test
-   └── data.spec.js
-
-directory: 6 file: 17
 ```
 
 ### `src/index.html`
@@ -175,15 +151,6 @@ escolhida.
 
 Por exemplo, se "descomentamos" a seguinte linha:
 
-```js
-// import data from './data/pokemon/pokemon.js';
-```
-
-A linha ficaria assim:
-
-```js
-import data from './data/pokemon/pokemon.js';
-```
 
 E agora teríamos a variável `data` disponível em `src/main.js`.
 
