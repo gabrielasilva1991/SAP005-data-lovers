@@ -75,7 +75,7 @@ Já nessa segunda imagem, temos um protótipo após as devidas alterações para
 * [Node.js](https://nodejs.org/)
 * [Jest](https://jestjs.io/)
 
-## 7. Desenvolvido por <img src= "https://media1.tenor.com/images/8b6c34504e2855d9a19a5b168155f3d6/tenor.gif?itemid=16327495" width="70" height="70" />
+## 7. Desenvolvido por <img src= "https://media1.tenor.com/images/8b6c34504e2855d9a19a5b168155f3d6/tenor.gif?itemid=16327495" width="60" height="60" />
 
 👩🏻‍💻 [Gabriela Silva](https://github.com/gabrielasilva1991)
 
