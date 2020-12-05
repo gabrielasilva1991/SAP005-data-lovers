@@ -6,79 +6,63 @@ export const menuSelectTipo = (buscarTipo, array) => {
   return array.filter(pokemon => pokemon.type.includes(buscarTipo)); 
 };
 
-export const calculoTipo = (totalPokeTipo, array) => {
-  ((totalPokeTipo / array) * 100);
+export const calculoTipo = (buscarTipo, array) => {
+  ((buscarTipo / array) * 100);
   
-};
-  
-const ordenarNumero = (a, b) => {
-  if (a.name > b.name) {
-    return 1;
-  } if (a.name < b.name) {
-    return -1;
-  }
-  return 0
 };
 
 export const selectNumeroCrescente = (array) => {
+  const ordenarNumero = (a, b) => {
+    if (a.name > b.name) {
+      return 1;
+    } if (a.name < b.name) {
+      return -1;
+    }
+    return 0;
+  }
   array.sort(ordenarNumero);
-}
-
-export const selectNumeroDecrescente = (array) => {
-  array.sort(ordenarNumero).reverse();
 };
 
-
-const ordenarNome = (a, b) => {
-  if (a.name > b.name) {
-    return 1;
-  } if (a.name < b.name) {
-    return -1;
+export const selectNumeroDecrescente = (array) => {
+  const ordenarNumero = (a, b) => {
+    if (a.name > b.name) {
+      return -1;
+    } if (a.name < b.name) {
+      return 1;
+    }
+    return 0
   }
-  return 0
+  array.sort(ordenarNumero)
 };
 
 export const selectNomeCrescente = (array) => {
+  const ordenarNome = (a, b) => {
+    if (a.name > b.name) {
+      return 1;
+    } if (a.name < b.name) {
+      return -1;
+    }
+    return 0;
+  }
   array.sort(ordenarNome);
-}
+};
 
 export const selectNomeDecrescente = (array) => {
-  array.sort(ordenarNome).reverse();
+  const ordenarNome = (a, b) => {
+    if (a.name > b.name) {
+      return -1;
+    } if (a.name < b.name) {
+      return 1;
+    }
+    return 0
+  }
+  array.sort(ordenarNome)
 };
 
 
 
-// export const selectNumeroCrescente = (ordenarNumeroCrescente, array) => {
-//   array.sort(function (a, b) {
-//     if (a.name > b.name) return 1;
-//     if (a.name < b.name) return -1;
-//     return 0
-//   });
-// };
-  
-// export const selectNumeroDecrescente = (ordenarNumeroDecrescente, array) => {
-//   array.sort(function (a, b) {
-//     if (a.name > b.name) return -1;
-//     if (a.name < b.name) return 1;
-//     return 0
-//   });
-// };
 
-// export const selectNomeCrescente = (ordenarNomeCrescente, array ) => {
-//   array.sort(function (a, b) {
-//     if (a.name > b.name) return 1;
-//     if (a.name < b.name) return -1;
-//     return 0
-//   });
-// };
 
-// export const selectNomeDecrescente = (ordenarNomeDecrescente, array ) => { 
-//   array.sort(function (a, b) {
-//     if (a.name > b.name) return -1;
-//     if (a.name < b.name) return 1;
-//     return 0
-//   });
-// };
 
 //funções que fazem ordenação e filtro
 
