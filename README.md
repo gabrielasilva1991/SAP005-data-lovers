@@ -1,9 +1,10 @@
-# Data Lovers
+# Data Lovers - Tema Pokemón
 
 ## Índice
 
 * [1. Projeto](#1-projeto)
 * [2. Desenvolvimento do Projeto](#2-desenvolvimento-do-projeto)
+
 * [3. Objetivos de aprendizagem](#3-objetivos-de-aprendizagem)
 * [4. Considerações gerais](#4-considerações-gerais)
 * [5. Critérios mínimos de aceitação do
@@ -16,15 +17,42 @@
 
 ***
 
+
 ## 1. Projeto
 
-Desenvolveu-se uma página web como o tema Pokemon, para que nossos usuários tenham acesso rápido a informações técnicas de Pokemons, tipo nome, características, de qual categoria ele pertence, nivel de força, comparação de pokemons, tamanho, raridade, tudo que um treinador de pokemon deve saber. Inclusive, Equipe Rocket #ficadica
-![Pensa](https://www.itel.gov.ao/uploads/mundo/tenor.gif)
+  Construimos uma página web como o tema Pokemon, para que nossos usuários tenham 
+acesso rápido a informações técnicas de Pokemons, tipo nome, características,
+de qual categoria ele pertence, nivel de força, comparação de pokemons, tamanho, raridade, tudo que um 
+treinador de pokemon deve saber. Inclusive, Equipe Rocket #ficadica
+<img src="https://www.memenews.com.br/wp-content/uploads/2019/11/meme-2-14-11-19.gif" width="150" height="150" />
 
 
+## 2. O que estamos usando e aprendendo nesta aplicação?
+![](https://i.pinimg.com/originals/35/98/8b/35988bf09ce2be958e36f4bc8f4575d1.gif")
 
-## 2.   Desenvolvimento do Projeto 
-De acordo com as necessidades do usuário, foi desenvolvido uma interface web onde se visualiza e manipula dados de acordo com o tema escolhido. Com HTML semântico, flexbox e seletores de CSS, em JS manipulamos eventos e seletores de DOM, foi ultilizado também for of, arrays, objetos.
+De acordo com as necessidades do usuário, desenvolvemos uma interface web onde 
+se visualiza e manipula dados.Usamos HTML semântico, flexbox e seletores de CSS,
+em JS manipulamos eventos e seletores de DOM, usamos também for of, arrays, objetos.
+
+
+## 5. Critérios mínimos de aceitação do projeto :female-technologist::skin-tone-5::female-technologist::skin-tone-2:
+
+### Histórias de usuário
+
+Diante da resposta dos usuários em nosso formulário, notamos a necessidade de uma 
+aplicação web que exibisse, a raridade dos pokemons, suas comparações, evoluções, 
+seus tipos, suas fraquesas e resistências.
+
+### Desenho de interface do usuário
+
+
+#### Protótipo de baixa fidelidade
+
+Na imagem abaixo é o primeiro escopo do projeto, inclusive mudanças ocorreram, para que melhor atendesse a necessidade dos usuários.
+![readme](escopo_one.png)
+
+Já nessa segunda imagem, temos um protótipo após as devidas alterações para melhoria do mesmo.
+![readme](protótipo.png)
 
 
 ### Testing
@@ -47,20 +75,14 @@ Diante da resposta dos usuários em nosso formulário, notamos a necessidade de 
 
 Durante o desafio você deverá fazer testes de usabilidade com usuários diferentes, e com base nos resultados desses testes, iterar seus desenhos de interface. Conte-nos quais problemas de usabilidade você detectou através dos testes e como os resolveu na proposta final.
 
-### Implementação da interface de usuário (HTML/CSS/JS)
 
-Após desenhar sua interface de usuário, deverá trabalhar na sua implementação.
-**Não** é necessário que construa a interface exatamente da mesma forma que
-desenhou. Terá um tempo limitado para trabalhar no projeto, então você deve
-priorizar as tarefas.
+### O que já implementamos no projeto? :heavy_check_mark:
 
-No mínimo, sua implementação deverá:
 
-1. Mostrar os dados em uma interface: pode ser em cards, tabelas, listas, etc.
-2. Permitir ao usuário interagir com a interface para obter as informações que
-   necessita;
-3. Ser _responsiva_, ou seja, deve ser visualizada sem problemas a partir de
-   diversos tamanhos de tela: celulares, tablets, notebooks, etc.
+1. Mostramos os cards com os dados do Pokemon na interface.
+2. Usuário consegue filtrar por tipo e ordenar em ordem crescente e decrescente
+do alfabeto.
+3. Responsividade ok 
 
 ### Testes unitários
 
@@ -72,6 +94,14 @@ Seus testes unitários devem ter cobertura mínima de 70% de _statements_
 (_sentenças_), _functions_ (_funções_), _lines_ (_linhas_), e _branches_
 (_ramos_) do arquivo `src/data.js`, que irá conter suas funções e que está
 detalhado na seção de [Considerações técnicas](#srcdatajs).
+
+## 4. Considerações gerais
+
+* Este projeto será executado em duplas.
+* Este projeto será entregue através do GitHub e a interface deve ser publicada
+  no [GitHub Pages](https://pages.github.com/).
+* Tempo para completá-lo: 3 semanas.
+
 
 ## 6. Hacker edition
 
@@ -121,15 +151,6 @@ escolhida.
 
 Por exemplo, se "descomentamos" a seguinte linha:
 
-```js
-// import data from './data/pokemon/pokemon.js';
-```
-
-A linha ficaria assim:
-
-```js
-import data from './data/pokemon/pokemon.js';
-```
 
 E agora teríamos a variável `data` disponível em `src/main.js`.
 
