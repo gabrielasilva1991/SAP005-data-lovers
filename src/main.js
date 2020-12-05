@@ -1,4 +1,4 @@
-import { inputNome, selectNumeroCrescente, selectNumeroDecrescente, selectTipo, calculoTipo, selectNomeCrescente, selectNomeDecrescente } from './data.js';
+import { inputNome, menuSelectTipo, selectNumeroCrescente, selectNumeroDecrescente, selectNomeCrescente, selectNomeDecrescente } from './data.js';
 
 import data from './data/pokemon/pokemon.js';
 
@@ -26,11 +26,17 @@ function mostrarPokemon(pokeFiltrado) {
         tipo.innerHTML = pokemon.type.join(", ")
         div.appendChild(tipo)
         div.classList.add("cards-tipos")
+
+        const numero = document.createElement("p");
+        numero.innerHTML = pokemon.num
+        div.appendChild(numero)
+        div.classList.add("cards-numeros")
       
         cards.appendChild(div)
     }
 }
 mostrarPokemon(pokemons)
+
 
 const button = document.getElementById("buscar-poke"); //local onde acontece ação no html
 button.addEventListener("click", nomePokemon); 
@@ -74,27 +80,8 @@ function pokemonOrdenar() {
 }
 
 
-/*const tipo = document.getElementById("ordenar-tipo");
-tipo.addEventListener("click", tipoPokemon);
-
-function tipoPokemon(event) {
-    event.preventDefault();
-    const buscarTipo = document.getElementById("ordenar-tipo").value;
-    const pokemonTipo = selectTipo(buscarTipo, data.pokemon);
-    mostrarPokemon(pokemonTipo);
-
-    console.log(pokemonTipo)
-};*/
-// const tipoCalculo = 
 
 
 
-// document.getElementById("ordenar-pokemon").onchange() => { //inicia ação qdo for trocado o item no select
-//     const pegarValorOrd = document.getElementById("ordenar-pokemon").value;
-//     const inputOrd = selectTipo(pokemons, )
-// }
-// mostrarPokemon()
 
 
-// funções que se ligam com o html
-// const div = `<div>${pokemon.name}</div>`

@@ -1,20 +1,20 @@
-import { example, anotherExample } from '../src/data.js';
+import { inputNome, menuSelectTipo, selectNumeroCrescente, selectNumeroDecrescente, selectNomeCrescente, selectNomeDecrescente } from '../src/data.js';
+import data from './mock.js';
 
-
-describe('example', () => {
-  it('is a function', () => {
-    expect(typeof example).toBe('function');
+describe('inputNome', () => {
+  it('Deve retornar', () => {
+    expect(typeof inputNome).toBe('function');
   });
 
-  it('returns `example`', () => {
-    expect(example()).toBe('example');
+  it('Deve retornar pokemons com nome "bulba"', () => { 
+    expect(inputNome("bulba", data.pokemon)).toBe('example');
   });
 });
 
 
 describe('anotherExample', () => {
   it('is a function', () => {
-    expect(typeof anotherExample).toBe('function');
+    expect(typeof menuSelectTipo).toBe('function');
   });
 
   it('returns `anotherExample`', () => {

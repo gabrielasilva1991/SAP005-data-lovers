@@ -127,7 +127,7 @@ body{
 }
 
 .cards{
-    width: 70vw;
+    width: 75vw;
     padding: 30px; /*espaçamento*/
     display: flex;
     flex-wrap: wrap;
@@ -171,6 +171,13 @@ body{
 }
 
 .cards-tipos{
+    text-align: center;
+    font-size: 10px;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-transform: uppercase;
+} 
+
+.cards-numeros{
     text-align: center;
     font-size: 10px;
     font-family: 'Source Sans Pro', sans-serif;
