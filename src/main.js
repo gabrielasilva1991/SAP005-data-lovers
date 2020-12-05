@@ -1,4 +1,4 @@
-import { inputNome, menuSelectTipo, selectNumeroCrescente, selectNumeroDecrescente, selectNomeCrescente, selectNomeDecrescente } from './data.js';
+import { inputNome, menuSelectTipo, calculoTipo, selectNumeroCrescente, selectNumeroDecrescente, selectNomeCrescente, selectNomeDecrescente } from './data.js';
 
 import data from './data/pokemon/pokemon.js';
 
@@ -46,15 +46,41 @@ function nomePokemon(event) {
     const buscarPokemon = document.getElementById("buscar-pokemon").value; //campo onde digita o nome do pokemon
     const pokemonNome = inputNome(buscarPokemon, data.pokemon);
     mostrarPokemon(pokemonNome);
-    
-    //console.log(pokemonNome)
-};
+}
+
+
+const tipo = document.getElementById("ordenar-tipo");
+tipo.addEventListener("click", tipoPokemon);
+
+function tipoPokemon(event) {
+    event.preventDefault();
+    const buscarTipo = document.getElementById("ordenar-tipo").value;
+    const pokemonTipo = menuSelectTipo(buscarTipo, data.pokemon);
+    const calculo = calculoTipo(buscarTipo, data.pokemon).toFixed(2); //casas usadas depois da virgula
+    const textPercent = `<p><strong>Os Pokémons de tipo ${buscarTipo} representam ${calculo} % da quantidade total de Pokémons.</strong></p>`
+    document.getElementById("calculo-agregado").innerHTML = textPercent;
+    mostrarPokemon(pokemonTipo);
+}
+
+const limparPesquisa = document.getElementById("recarregar-pagina");
+limparPesquisa.addEventListener("click", limpar); 
+
+function limpar (){
+    inputNome.value="";
+    menuSelectTipo.value="";
+    calculoTipo.value="";
+    selectNumeroCrescente.value="";
+    selectNumeroDecrescente.value="";
+    selectNomeCrescente.value="";
+    selectNomeDecrescente.value="";
+    mostrarPokemon(data.pokemon);
+}
 
 const ordenarPokemon = document.querySelector("#ordenar-pokemon");
 ordenarPokemon.addEventListener("change", pokemonOrdenar); 
-const ordenar = ordenarPokemon.value;
 
 function pokemonOrdenar() {
+  const ordenar = ordenarPokemon.value;
     if (ordenar === "numero-crescente") {
         document.getElementById("ordenar-pokemon").value;
         selectNumeroCrescente (data.pokemon);
@@ -74,14 +100,5 @@ function pokemonOrdenar() {
         document.getElementById("ordenar-pokemon").value;
         selectNomeDecrescente(data.pokemon);
         mostrarPokemon(data.pokemon);
-
-        console.log(pokemonOrdenar);
     }
 }
-
-
-
-
-
-
-
