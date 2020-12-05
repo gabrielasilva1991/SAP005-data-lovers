@@ -74,21 +74,7 @@ function pokemonOrdenar() {
 }
 
 
-
-/*const numero = document.getElementById("ordenar-pokemon");
-numero.addEventListener("change", numeroPokemon);
-
-function numeroPokemon(event) {
-    event.preventDefault();
-    const buscarNumero = document.getElementById("ordenar-pokemon").value;
-    const pokemonNumero = selectNumero(buscarNumero, data.pokemon);
-    mostrarPokemon(pokemonNumero);
-
-    //console.log(pokemonNumero)
-};
-
-
-const tipo = document.getElementById("ordenar-tipo");
+/*const tipo = document.getElementById("ordenar-tipo");
 tipo.addEventListener("click", tipoPokemon);
 
 function tipoPokemon(event) {
@@ -98,8 +84,7 @@ function tipoPokemon(event) {
     mostrarPokemon(pokemonTipo);
 
     console.log(pokemonTipo)
-};
-*/
+};*/
 // const tipoCalculo = 
 
 
