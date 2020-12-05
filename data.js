@@ -30,6 +30,7 @@ export const selectNumeroDecrescente = (array) => {
   return array.sort(ordenarNumero).reverse();
 };
 
+
 const ordenarNome = (a, b) => {
   if (a.name > b.name) {
     return 1;
@@ -47,7 +48,6 @@ export const selectNomeDecrescente = (array) => {
   return array.sort(ordenarNome).reverse();
 };
 
-
 //funções que fazem ordenação e filtro
 
 //include 
@@ -55,5 +55,3 @@ export const selectNomeDecrescente = (array) => {
 
 //startsWith 
 // Quando começa a escrever ele vai mostrando sugestoes que começam com a letra
-// O método startsWith() determina se uma string começa com os caracteres especificados, retornando true ou false.
-// Esse método é case-sensitive (difere maiúsculas de minúsculas, e vice-versa). 
