@@ -78,9 +78,10 @@ function limpar (){
 
 const ordenarPokemon = document.querySelector("#ordenar-pokemon");
 ordenarPokemon.addEventListener("change", pokemonOrdenar); 
-const ordenar = ordenarPokemon.value;
+
 
 function pokemonOrdenar(){
+    const ordenar = ordenarPokemon.value;
     if (ordenar === "numero-crescente") {
         document.getElementById("ordenar-pokemon").value;
         selectNumeroCrescente (data.pokemon);

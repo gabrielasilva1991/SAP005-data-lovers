@@ -14,9 +14,9 @@ export const calculoTipo = (buscarTipo, array) => {
 };
 
 const ordenarNumero = (a, b) => {
-  if (a.name > b.name) {
+  if (a.num > b.num) {
     return 1;
-  } if (a.name < b.name) {
+  } if (a.num < b.num) {
     return -1;
   }
   return 0
@@ -55,5 +55,3 @@ export const selectNomeDecrescente = (array) => {
 
 //startsWith 
 // Quando começa a escrever ele vai mostrando sugestoes que começam com a letra
-// O método startsWith() determina se uma string começa com os caracteres especificados, retornando true ou false.
-// Esse método é case-sensitive (difere maiúsculas de minúsculas, e vice-versa). 
