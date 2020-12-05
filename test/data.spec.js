@@ -142,8 +142,8 @@ describe('selectNumeroCrescente', () => {
       ]}, 
     ];
 
-    let ordenarNumeroCrescente = "01-251"
-    const ordenarNumeroCres = selectNumeroCrescente(ordenarNumeroCrescente, pokemons);
+    //let ordenarNumeroCrescente = "01-251"
+    const ordenarNumeroCres = selectNumeroCrescente("251-01", pokemons);
     expect(ordenarNumeroCres[0].name).toEqual("caterpie")
 
   });
@@ -175,8 +175,8 @@ describe('selectNumeroDecrescente', () => {
       ]}, 
     ];
 
-    let ordenarNumeroDecrescente = "251-01"
-    const ordenarNumeroDecre = selectNumeroDecrescente(ordenarNumeroDecrescente, pokemons);
+    //let ordenarNumeroDecrescente = "251-01"
+    const ordenarNumeroDecre = selectNumeroDecrescente("251-01", pokemons);
     expect(ordenarNumeroDecre[0].name).toEqual("pichu")
  
   });
@@ -210,8 +210,8 @@ describe('selectNomeCrescente', () => {
       ]}, 
     ];
 
-    let ordenarNomeCrescente = "A-Z"
-    const ordenarNomeCres = selectNomeCrescente(ordenarNomeCrescente, pokemons);
+    //let ordenarNomeCrescente = "A-Z"
+    const ordenarNomeCres = selectNomeCrescente("A-Z", pokemons);
     expect(ordenarNomeCres[0].name).toEqual("bulbasur")
  
   });
@@ -245,9 +245,9 @@ describe('selectNomeDecrescente', () => {
       ]}, 
     ];
 
-    let ordenarNomeCrescente = "A-Z"
-    const ordenarNomeDecre = selectNomeDecrescente(ordenarNomeCrescente, pokemons);
-    expect(ordenarNome[0].name).toEqual("golbat")
+    //let ordenarNomeCrescente = "A-Z"
+    const ordenarNomeDecre = selectNomeDecrescente("Z-A", pokemons);
+    expect(ordenarNomeDecre[0].name).toEqual("golbat")
  
   });
 });
