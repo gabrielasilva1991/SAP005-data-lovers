@@ -46,7 +46,7 @@ function nomePokemon(event) {
     const buscarPokemon = document.getElementById("buscar-pokemon").value; //campo onde digita o nome do pokemon
     const pokemonNome = inputNome(buscarPokemon, data.pokemon);
     mostrarPokemon(pokemonNome);
-};
+}
 
 
 const tipo = document.getElementById("ordenar-tipo");
@@ -56,21 +56,11 @@ function tipoPokemon(event) {
     event.preventDefault();
     const buscarTipo = document.getElementById("ordenar-tipo").value;
     const pokemonTipo = menuSelectTipo(buscarTipo, data.pokemon);
+    const calculo = calculoTipo(buscarTipo, data.pokemon).toFixed(2); //casas usadas depois da virgula
+    const textPercent = `<p><strong>Os Pokémons de tipo ${buscarTipo} representam ${calculo} % da quantidade total de Pokémons.</strong></p>`
+    document.getElementById("calculo-agregado").innerHTML = textPercent;
     mostrarPokemon(pokemonTipo);
-};
-
-const tipoCalculo = document.getElementById("ordenar-tipo");
-tipoCalculo.addEventListener("click", calculo); // assim que mudar o seletor executa a função
-
-function calculo(array) {
-    const tipoBuscar = document.getElementById("ordenar-tipo").value;
-    const totalPokemons = array.length
-    const totalTipoPokemons = buscarTipo.length
-    const calculoTipo = calculoTipo(totalTipoPokemons, totalPokemons).toFixed(2); //casas usadas depois da virgula
-    const textPercent = `<p>Os Pokémons de tipo ${tipoBuscar} representam ${calculoTipo} % da quantidade total de Pokémons.</p>`
-    return document.getElementById("calculo").innerHTML = textPercent;
-};
-
+}
 
 const limparPesquisa = document.getElementById("recarregar-pagina");
 limparPesquisa.addEventListener("click", limpar); 
@@ -78,58 +68,38 @@ limparPesquisa.addEventListener("click", limpar);
 function limpar (){
     inputNome.value="";
     menuSelectTipo.value="";
+    calculoTipo.value="";
     selectNumeroCrescente.value="";
     selectNumeroDecrescente.value="";
     selectNomeCrescente.value="";
     selectNomeDecrescente.value="";
     mostrarPokemon(data.pokemon);
-};
+}
 
+const ordenarPokemon = document.querySelector("#ordenar-pokemon");
+ordenarPokemon.addEventListener("change", pokemonOrdenar); 
+const ordenar = ordenarPokemon.value;
 
-
-
-
-
-
-
-
-// function calculo() {
-//     const tipoBuscar = document.getElementById("calculo-agregado").value;
-//     const pokemonTipo = menuSelectTipo(buscarTipo, data.pokemon);
-//     const calculo = calculoTipo(totalPokeTipo.length, data.pokemon.length).toFixed(2); //casas usadas depois da virgula
-//     document.getElementById("calculo-agregado").innerHTML = `<p>Os Pokémons de tipo ${tipoBuscar} representam ${calculo} % do total de Pokémons.</p>`;
-//     mostrarPokemon(pokemonTipo);
-
-//     console.log(pokemonTipo)
-// };
-
-
-
-
-
-const ordenarPokemon = document.getElementById("ordenar-pokemon");
-ordenarPokemon.addEventListener("change", pokemonOrdenar);
-
-function pokemonOrdenar() {
-
-    if ("numero-crescente") {
+function pokemonOrdenar(){
+    if (ordenar === "numero-crescente") {
         document.getElementById("ordenar-pokemon").value;
-        selectNumeroCrescente(data.pokemon);
+        selectNumeroCrescente (data.pokemon);
         mostrarPokemon(data.pokemon);
     
-    } else if ("numero-decrescente") {
+    } else if (ordenar === "numero-decrescente") {
         document.getElementById("ordenar-pokemon").value;
-        selectNumerodecrescente(data.pokemon);
+        selectNumeroDecrescente (data.pokemon);
         mostrarPokemon(data.pokemon);
     
-    } else if ("nome-crescente") {
+    } else if (ordenar === "nome-crescente") {
         document.getElementById("ordenar-pokemon").value;
         selectNomeCrescente(data.pokemon);
         mostrarPokemon(data.pokemon);
     
-    } else if ("nome-decrescente") {
+    } else if (ordenar === "nome-decrescente") {
         document.getElementById("ordenar-pokemon").value;
         selectNomeDecrescente(data.pokemon);
         mostrarPokemon(data.pokemon);
+
     }
-};
+}

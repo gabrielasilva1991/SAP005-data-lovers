@@ -1,4 +1,7 @@
 export const inputNome = (buscarNome, array) => {
+  if(typeof inputNome === "number"){
+    throw new TypeError("Digite o nome do pokémon que deseja pesquisar");
+  }
   return array.filter(pokemon => pokemon.name.startsWith(buscarNome));
 };
 
@@ -7,61 +10,42 @@ export const menuSelectTipo = (buscarTipo, array) => {
 };
 
 export const calculoTipo = (buscarTipo, array) => {
-  ((buscarTipo / array) * 100);
-  
+  return ((buscarTipo.length / array.length) * 100);
+};
+
+const ordenarNumero = (a, b) => {
+  if (a.name > b.name) {
+    return 1;
+  } if (a.name < b.name) {
+    return -1;
+  }
+  return 0
 };
 
 export const selectNumeroCrescente = (array) => {
-  const ordenarNumero = (a, b) => {
-    if (a.name > b.name) {
-      return 1;
-    } if (a.name < b.name) {
-      return -1;
-    }
-    return 0;
-  }
-  array.sort(ordenarNumero);
-};
+  return array.sort(ordenarNumero);
+}
 
 export const selectNumeroDecrescente = (array) => {
-  const ordenarNumero = (a, b) => {
-    if (a.name > b.name) {
-      return -1;
-    } if (a.name < b.name) {
-      return 1;
-    }
-    return 0
+  return array.sort(ordenarNumero).reverse();
+};
+
+const ordenarNome = (a, b) => {
+  if (a.name > b.name) {
+    return 1;
+  } if (a.name < b.name) {
+    return -1;
   }
-  array.sort(ordenarNumero)
+  return 0
 };
 
 export const selectNomeCrescente = (array) => {
-  const ordenarNome = (a, b) => {
-    if (a.name > b.name) {
-      return 1;
-    } if (a.name < b.name) {
-      return -1;
-    }
-    return 0;
-  }
-  array.sort(ordenarNome);
-};
+  return array.sort(ordenarNome);
+}
 
 export const selectNomeDecrescente = (array) => {
-  const ordenarNome = (a, b) => {
-    if (a.name > b.name) {
-      return -1;
-    } if (a.name < b.name) {
-      return 1;
-    }
-    return 0
-  }
-  array.sort(ordenarNome)
+  return array.sort(ordenarNome).reverse();
 };
-
-
-
-
 
 
 //funções que fazem ordenação e filtro
