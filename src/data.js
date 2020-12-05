@@ -14,9 +14,9 @@ export const calculoTipo = (buscarTipo, array) => {
 };
 
 const ordenarNumero = (a, b) => {
-  if (a.name > b.name) {
+  if (a.num > b.num) {
     return 1;
-  } if (a.name < b.name) {
+  } if (a.num < b.num) {
     return -1;
   }
   return 0
