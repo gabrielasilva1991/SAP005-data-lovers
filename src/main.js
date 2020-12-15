@@ -82,6 +82,7 @@ ordenarPokemon.addEventListener("change", pokemonOrdenar);
 
 function pokemonOrdenar(){
     const ordenar = ordenarPokemon.value;
+    
     if (ordenar === "numero-crescente") {
         document.getElementById("ordenar-pokemon").value;
         selectNumeroCrescente (data.pokemon);
