@@ -30,7 +30,6 @@ export const selectNumeroDecrescente = (array) => {
   return array.sort(ordenarNumero).reverse();
 };
 
-
 const ordenarNome = (a, b) => {
   if (a.name > b.name) {
     return 1;
