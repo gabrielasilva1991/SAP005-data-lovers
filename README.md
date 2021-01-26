@@ -79,8 +79,10 @@ Já nessa segunda imagem, temos um protótipo após as devidas alterações para
 
 
 ## 7. Aqui vai o link da aplicação 
-<img src= "https://media.tenor.co/images/13d1b01ced648f09f42507b2acc44cd2/raw" width="50" height="70" /> 
 
+[Clique Aqui](https://gabrielasilva1991.github.io/SAP005-data-lovers/)
+
+<img src= "https://media.tenor.co/images/13d1b01ced648f09f42507b2acc44cd2/raw" width="50" height="70" /> 
 
 
 #### Ferramentas
@@ -92,7 +94,7 @@ Já nessa segunda imagem, temos um protótipo após as devidas alterações para
 * [Jest](https://jestjs.io/)
 
 
-## 7. Desenvolvido por
+## 8. Desenvolvido por
 <img src= "https://media1.tenor.com/images/8b6c34504e2855d9a19a5b168155f3d6/tenor.gif?itemid=16327495" width="60" height="60" />
 
 👩🏻‍💻 [Gabriela Silva](https://github.com/gabrielasilva1991)
