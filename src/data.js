@@ -13,92 +13,39 @@ export const calculoTipo = (buscarTipo, array) => {
   return ((buscarTipo.length / array.length) * 100);
 };
 
+const ordenarNumero = (a, b) => {
+  if (a.num > b.num) {
+    return 1;
+  } if (a.num < b.num) {
+    return -1;
+  }
+  return 0
+};
 
 export const selectNumeroCrescente = (array) => {
-  const ordenarNumero = (a, b) => {
-    if (a.num > b.num) {
-      return 1;
-    } if (a.num < b.num) {
-      return -1;
-    }
-    return 0;
-  }
-  array.sort(ordenarNumero);
+  return array.sort(ordenarNumero);
 }
 
 export const selectNumeroDecrescente = (array) => {
-  const ordenarNumero = (a, b) => {
-    if (a.num > b.num) {
-      return -1;
-    } if (a.num < b.num) {
-      return 1;
-    }
-    return 0;
+  return array.sort(ordenarNumero).reverse();
+};
+
+const ordenarNome = (a, b) => {
+  if (a.name > b.name) {
+    return 1;
+  } if (a.name < b.name) {
+    return -1;
   }
-  array.sort(ordenarNumero);
-}
+  return 0
+};
 
 export const selectNomeCrescente = (array) => {
-  const ordenarNome = (a, b) => {
-    if (a.name > b.name) {
-      return 1;
-    } if (a.name < b.name) {
-      return -1;
-    }
-    return 0;
-  }
-  array.sort(ordenarNome);
+  return array.sort(ordenarNome);
 }
 
 export const selectNomeDecrescente = (array) => {
-  const ordenarNome = (a, b) => {
-    if (a.name > b.name) {
-      return -1;
-    } if (a.name < b.name) {
-      return 1;
-    }
-    return 0;
-  }
-  array.sort(ordenarNome);
-}
-
-
-
-
-// const ordenarNumero = (a, b) => {
-//   if (a.num > b.num) {
-//     return 1;
-//   } if (a.num < b.num) {
-//     return -1;
-//   }
-//   return 0
-// };
-
-// export const selectNumeroCrescente = (array) => {
-//   return array.sort(ordenarNumero);
-// }
-
-// export const selectNumeroDecrescente = (array) => {
-//   return array.sort(ordenarNumero).reverse();
-// };
-
-// const ordenarNome = (a, b) => {
-//   if (a.name > b.name) {
-//     return 1;
-//   } if (a.name < b.name) {
-//     return -1;
-//   }
-//   return 0
-// };
-
-// export const selectNomeCrescente = (array) => {
-//   return array.sort(ordenarNome);
-// }
-
-// export const selectNomeDecrescente = (array) => {
-//   return array.sort(ordenarNome).reverse();
-// };
-
+  return array.sort(ordenarNome).reverse();
+};
 
 //funções que fazem ordenação e filtro
 
