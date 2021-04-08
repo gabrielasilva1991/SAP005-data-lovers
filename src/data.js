@@ -9,6 +9,14 @@ export const menuSelectTipo = (buscarTipo, array) => {
   return array.filter(pokemon => pokemon.type.includes(buscarTipo)); 
 };
 
+export const menuSelectResistencia = (buscarResistencia, array) => {
+  return array.filter(pokemon => pokemon.resistant.includes(buscarResistencia)); 
+};
+
+export const menuSelectFraquezas = (buscarFraquezas, array) => {
+  return array.filter(pokemon => pokemon.weaknesses.includes(buscarFraquezas)); 
+};
+
 export const calculoTipo = (buscarTipo, array) => {
   return ((buscarTipo.length / array.length) * 100);
 };
