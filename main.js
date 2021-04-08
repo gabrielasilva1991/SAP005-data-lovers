@@ -10,27 +10,37 @@ function mostrarPokemon(pokeFiltrado) {
     
     for (let pokemon of pokeFiltrado){
         const div = document.createElement("div")
-        div.classList.add("div-cards")
-
-        const imagem = document.createElement("img");
-        imagem.src = pokemon.img
-        div.appendChild(imagem) 
-        div.classList.add("cards-imagens")
+        div.classList.add("div-cards")       
         
-        const nome = document.createElement("h2");
-        nome.innerHTML = pokemon.name.toUpperCase()
-        div.appendChild(nome)
-        div.classList.add("cards-nomes")
-        
-        const tipo = document.createElement("p");
-        tipo.innerHTML = pokemon.type.join(", ")
-        div.appendChild(tipo)
-        div.classList.add("cards-tipos")
-
         const numero = document.createElement("p");
         numero.innerHTML = pokemon.num
         div.appendChild(numero)
         div.classList.add("cards-numeros")
+
+        const nome = document.createElement("h2");
+        nome.innerHTML = pokemon.name.toUpperCase()
+        div.appendChild(nome)
+        div.classList.add("cards-nomes")      
+        
+        const imagem = document.createElement("img");
+        imagem.src = pokemon.img
+        div.appendChild(imagem) 
+        div.classList.add("cards-imagens")
+
+        const tipo = document.createElement("p");
+        tipo.innerHTML = `<strong>Tipo:</strong> ${pokemon.type.join(", ")}`
+        div.appendChild(tipo)
+        div.classList.add("cards-tipos")
+
+        const resistencia = document.createElement("p");
+        resistencia.innerHTML = `<strong>Resistente Contra:</strong> ${pokemon.resistant.join(", ")}`
+        div.appendChild(resistencia)
+        div.classList.add("cards-resistencias")
+
+        const fraqueza = document.createElement("p");
+        fraqueza.innerHTML = `<strong>Fraco Contra:</strong> ${pokemon.weaknesses.join(", ")}`
+        div.appendChild(fraqueza)
+        div.classList.add("cards-fraquezas")
       
         cards.appendChild(div)
     }
@@ -52,13 +62,15 @@ function nomePokemon(event) {
 const tipo = document.getElementById("ordenar-tipo");
 tipo.addEventListener("click", tipoPokemon);
 
+const divCalculo = document.getElementById("calculo-agregado") 
+
 function tipoPokemon(event) {
     event.preventDefault();
     const buscarTipo = document.getElementById("ordenar-tipo").value;
     const pokemonTipo = menuSelectTipo(buscarTipo, data.pokemon);
     const calculo = calculoTipo(buscarTipo, data.pokemon).toFixed(2); //casas usadas depois da virgula
     const textPercent = `<p><strong>Os Pokémons de tipo ${buscarTipo} representam ${calculo} % da quantidade total de Pokémons.</strong></p>`
-    document.getElementById("calculo-agregado").innerHTML = textPercent;
+    divCalculo.innerHTML = textPercent;
     mostrarPokemon(pokemonTipo);
 }
 
@@ -68,7 +80,7 @@ limparPesquisa.addEventListener("click", limpar);
 function limpar (){
     inputNome.value="";
     menuSelectTipo.value="";
-    calculoTipo.value="";
+    divCalculo.innerHTML="";
     selectNumeroCrescente.value="";
     selectNumeroDecrescente.value="";
     selectNomeCrescente.value="";
