@@ -37,7 +37,7 @@ body {
     flex-direction: row;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    width: 90vw;
+    width: 70vw;
 }
 
 .ordenar-pokemon {
@@ -45,8 +45,8 @@ body {
     -moz-appearance: none; /* Remove estilo padrão do FireFox */   
     appearance: none; /* Remove estilo padrão do FireFox*/   
     background: url(http://www.webcis.com.br/images/imagens-noticias/select/ico-seta-appearance.gif) no-repeat #eeecec;  /* Imagem de fundo (Seta) */   
-    background-position: 218px center;  /*Posição da imagem do background*/   
-    width: 250px; /*Tamanho do select*/   
+    background-position: 210px center;  /*Posição da imagem do background*/   
+    width: 240px; /*Tamanho do select*/   
     height:30px; /*Altura do select, importante para ter a mesma altura em todos navegadores*/   
     text-align: left;
     font-size: 100%; 
@@ -58,8 +58,8 @@ body {
     -moz-appearance: none; /* Remove estilo padrão do FireFox */   
     appearance: none; /* Remove estilo padrão do FireFox*/   
     background: url(http://www.webcis.com.br/images/imagens-noticias/select/ico-seta-appearance.gif) no-repeat #eeecec;  /* Imagem de fundo (Seta) */   
-    background-position: 218px center;  /*Posição da imagem do background*/   
-    width: 250px; /*Tamanho do select*/   
+    background-position: 210px center;  /*Posição da imagem do background*/   
+    width: 240px; /*Tamanho do select*/   
     height:30px; /*Altura do select, importante para ter a mesma altura em todos navegadores*/   
     text-align: left;
     font-size: 100%; 
@@ -75,7 +75,7 @@ body {
 
 
 .pesquisar-input {
-    width: 290px;
+    width: 210px;
     font-size: 100%;
     padding: 7px;
     border-width: 0px;
@@ -103,6 +103,10 @@ body {
 
 
 @media (max-width: 600px) {
+    #logo {
+        width: 50%;
+        height: 50%;
+    }
     .pesquisar-input {
         width: 150px;
     }
@@ -115,9 +119,13 @@ body {
     }
 
     .campos-pesquisa {
-        width: 50%;
+        width: 60%;
         flex-direction: column;
         justify-content: center;
+    }
+
+    .div-cards {
+        height: 400px;
     }
 
 }
@@ -147,6 +155,13 @@ body {
     flex: 0 1 13%;  
     align-content: center; 
 }
+
+@media (max-width: 600px) {
+    .div-cards {
+        height: 340px;
+    }
+}
+
 
 .div-cards:hover {
     -webkit-transform: scale(1.1);

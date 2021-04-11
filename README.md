@@ -50,7 +50,7 @@ Foi desenvolvido inicialmente  no seguinte modelo:
 
 O layout foi alterado para melhor visualização das informações pelos usuários.
 
-![prototipo](prototipo02.jpg)
+![prototipo](prototipo02.jpeg)
 
 ## 5. Ferramentas Utilizadas
 
