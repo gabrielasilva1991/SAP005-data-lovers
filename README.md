@@ -33,9 +33,9 @@ Eles podem fazer a _busca_ por:
 
 Foi realizada uma pesquisa com os usuários através de formulários e então identificadas as principais informações que esses usuários gostariam de ver em uma aplicação sobre Pokémons:
 
-:warning: Fazer busca pelo nome,
-:warning: Visualizar por tipo,
-:warning: Visualizar Resistências, 
+:warning: Fazer busca pelo nome;
+:warning: Visualizar por tipo;
+:warning: Visualizar Resistências; 
 :warning: Visualizar Fraquezas.
 
 ## 4. Desenho de Interface do Usuário 
@@ -44,23 +44,23 @@ Foi realizada uma pesquisa com os usuários através de formulários e então id
 
 Foi desenvolvido inicialmente  no seguinte modelo:
 
-![prototipo](prototipo01.jpg)
+![prototipo](/src/image/prototipo01.jpg)
 
 ### Protótipo Final
 
 O layout foi alterado para melhor visualização das informações pelos usuários.
 
-![prototipo](prototipo02.jpeg)
+![prototipo](/src/image/prototipo02.jpg)
 
 ## 5. Ferramentas Utilizadas
 
-✅ HTML5
-✅ CSS3
-✅ Javascript
-✅ GitHub
-✅ GitHub Pages
-✅ Node.js
-✅ Jest
+✅ HTML5;
+✅ CSS3;
+✅ Javascript;
+✅ GitHub;
+✅ GitHub Pages;
+✅ Node.js;
+✅ Jest.
 
 ## 6. Desenvolvedora <img src= "https://i.pinimg.com/originals/c6/f1/3b/c6f13b01a53d7152d7f235838efe5a09.gif" width="60" height="60" />
 
