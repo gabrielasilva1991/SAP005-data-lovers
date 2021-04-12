@@ -1,4 +1,4 @@
-# Pokémon <img src= "https://media1.tenor.com/images/8b6c34504e2855d9a19a5b168155f3d6/tenor.gif?itemid=16327495" width="60" height="60" />
+# Pokémon
 
 Acesse a aplicação aqui: https://gabrielasilva1991.github.io/SAP005-data-lovers/
 
@@ -33,10 +33,10 @@ Eles podem fazer a _busca_ por:
 
 Foi realizada uma pesquisa com os usuários através de formulários e então identificadas as principais informações que esses usuários gostariam de ver em uma aplicação sobre Pokémons:
 
-- :warning: Fazer busca pelo nome;
-- :warning: Visualizar por tipo;
-- :warning: Visualizar Resistências; 
-- :warning: Visualizar Fraquezas.
+- :warning: Fazer busca pelo nome
+- :warning: Visualizar por tipo
+- :warning: Visualizar Resistências 
+- :warning: Visualizar Fraquezas
 
 ## 4. Desenho de Interface do Usuário 
 
@@ -45,7 +45,7 @@ Foi realizada uma pesquisa com os usuários através de formulários e então id
 Foi desenvolvido inicialmente  no seguinte modelo:
 
 <p align="center">
-  <img src="./src/image/protótipo01.jpg" height="400px">
+  <img src="./src/image/prototipo01.jpg" height="400px">
 </p>
 
 <!-- ![prototipo](/src/image/prototipo01.jpg) -->
@@ -55,21 +55,21 @@ Foi desenvolvido inicialmente  no seguinte modelo:
 O layout foi alterado para melhor visualização das informações pelos usuários.
 
 <p align="center">
-  <img src="./src/image/protótipo02.jpg" height="400px">
+  <img src="./src/image/prototipo02.jpg" height="400px">
 </p>
 
 <!-- ![prototipo](/src/image/prototipo02.jpg) -->
 
 ## 5. Ferramentas Utilizadas
 
-- ✅ HTML5;
-- ✅ CSS3;
-- ✅ Javascript;
-- ✅ GitHub;
-- ✅ GitHub Pages;
-- ✅ Node.js;
+- ✅ HTML5
+- ✅ CSS3
+- ✅ Javascript
+- ✅ GitHub
+- ✅ GitHub Pages
+- ✅ Node.js
 - ✅ Jest.
 
-## 6. Desenvolvedora <img src= "https://i.pinimg.com/originals/c6/f1/3b/c6f13b01a53d7152d7f235838efe5a09.gif" width="60" height="60" />
+## 6. Desenvolvedora 
 
 [Gabriela Silva](https://github.com/gabrielasilva1991)
