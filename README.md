@@ -1,102 +1,67 @@
+# Pokémon <img src= "https://media1.tenor.com/images/8b6c34504e2855d9a19a5b168155f3d6/tenor.gif?itemid=16327495" width="60" height="60" />
 
-# Data Lovers - Pokémon Web 
-
+Acesse a aplicação aqui: https://gabrielasilva1991.github.io/SAP005-data-lovers/
 
 ## Índice
 
-* [1. Projeto](#1-projeto)
-* [2. Desenvolvimento do Projeto](#2-desenvolvimento-do-projeto)
-* [3. Necessidade do Usuário](#3-necessidade-do-usuário)
-* [4. Desenho de interface do usuário](#4-desenho-de-interface-do-usuário)
-* [5. O que o usuário já vai ter acesso](#5-o-que-o-usuário-já-vai-ter-acesso)
-* [6. O que em breve estará disponível](#6-o-que-em-breve-já-vai-ter-acesso)
-* [7. Aqui vai o link da aplicação](#7-aqui-vai-o-link-da-aplicação)
-* [8. Desenvolvido por](#8-desenvolvido-por)
+* [1. Apresentação](#1-apresentação)
+* [2. Sobre o Projeto](#2-sobre-o-projeto)
+* [3. Necessidade dos Usuários](#3-necessidade-dos-usuários)
+* [4. Desenho de Interface do Usuário](#4-desenho-de-interface-do-usuário)
+* [5. Ferramentas Utilizadas](#7-ferramentas-utilizadas)
+* [6. Desenvolvedora](#8-desenvolvedora)
 
 ***
 
+## 1. Apresentação
 
-## 1. Projeto
+Projeto realizado durante o Bootcamp Laboratória - SAP005, com intuito de criar uma interface web onde se possa visualizar e manipular dados, entendendo o que o usuário necessita.
 
-Desenvolveu-se uma página web como o tema Pokémon, para que nossos usuários tenham acesso rápido
-a informações técnicas de Pokémon, tipo nome, características, de qual categoria ele pertence, 
-nivel de força, comparação de Pokémons, tamanho, raridade, tudo que um treinador de Pokémon
-deve saber. Inclusive, Equipe Rocket #ficadica
+## 2. Sobre o projeto
 
-![Pensa](https://www.itel.gov.ao/uploads/mundo/tenor.gif)
- 
+A aplicação oferece informações para os usuários fãs de Pokémons.
 
-## 2. O que estamos usando e aprendendo nesta aplicação?
-![](https://i.pinimg.com/originals/35/98/8b/35988bf09ce2be958e36f4bc8f4575d1.gif")
+Eles podem fazer a _busca_ por:
 
-De acordo com as necessidades do usuário, desenvolvemos uma interface web onde 
-se visualiza e manipula dados.Usamos HTML semântico, flexbox e seletores de CSS,
-em JS manipulamos eventos e seletores de DOM, usamos também for of, arrays, objetos.
+* _Nome_ de Pokémon, 
 
+* Ordem crescente e decrescente de _nome_ ou _número_,
 
-## 3. Necessidade do Usuário
+* Filtrar por _tipo_ vendo a porcentagem do total de todos Pokémons que esse tipo representa.
 
-Diante da resposta dos usuários em nosso formulário, notamos a necessidade de uma aplicação
-web que exibisse a raridade dos Pokémon, suas comparações, evoluções, seus tipos, 
-suas fraquesas e resistências.
+## 3. Necessidade dos Usuários
 
-## 4. Desenho de interface do usuário 
+Foi realizada uma pesquisa com os usuários através de formulários e então identificadas as principais informações que esses usuários gostariam de ver em uma aplicação sobre Pokémons:
 
-Na imagem abaixo é o  escopo do projeto, inclusive mudanças ocorreram, para que melhor 
-atendesse a necessidade dos usuários. 
+:warning: Fazer busca pelo nome,
+:warning: Visualizar por tipo,
+:warning: Visualizar Resistências, 
+:warning: Visualizar Fraquezas.
 
-![escopo](escopo.jpg)
+## 4. Desenho de Interface do Usuário 
 
-### Protótipo de baixa fidelidade
-Já nessa segunda imagem, temos um protótipo após as devidas alterações para melhoria do mesmo. 
+### Protótipo Inicial
 
-![prototipo](prototipo.jpg)
+Foi desenvolvido inicialmente  no seguinte modelo:
 
+![prototipo](prototipo01.jpg)
 
-## 5. O que o usuário já vai ter acesso 
-<img src= "https://miro.medium.com/max/1600/1*XZ3TXibcnhNic2dCQSKIbg.gif" width="60" height="60" />
+### Protótipo Final
 
-✅ Mostramos os cards com os dados do Pokémon na interface.
+O layout foi alterado para melhor visualização das informações pelos usuários.
 
-✅ Usuário consegue filtrar por tipo.
+![prototipo](prototipo02.jpeg)
 
-✅ Colocar em ordem crescente.
+## 5. Ferramentas Utilizadas
 
-✅ Campo de busca.
+✅ HTML5
+✅ CSS3
+✅ Javascript
+✅ GitHub
+✅ GitHub Pages
+✅ Node.js
+✅ Jest
 
+## 6. Desenvolvedora <img src= "https://i.pinimg.com/originals/c6/f1/3b/c6f13b01a53d7152d7f235838efe5a09.gif" width="60" height="60" />
 
-
-## 6. O que em breve estará disponível
-<img src= "https://i.pinimg.com/originals/c6/f1/3b/c6f13b01a53d7152d7f235838efe5a09.gif" width="60" height="60" />
-
-❗️Responsividade.
-
-❗️Exibição das características.
-
-❗️Exibir em ordem numérica de forma decrescente.
-
-❗️Comparação entre Pokémons.
-
-
-## 7. Aqui vai o link da aplicação 
-
-[Clique Aqui](https://gabrielasilva1991.github.io/SAP005-data-lovers/)
-
-<img src= "https://media.tenor.co/images/13d1b01ced648f09f42507b2acc44cd2/raw" width="50" height="70" /> 
-
-
-#### Ferramentas
-
-* [Git](https://git-scm.com/)
-* [GitHub](https://github.com/)
-* [GitHub Pages](https://pages.github.com/)
-* [Node.js](https://nodejs.org/)
-* [Jest](https://jestjs.io/)
-
-
-## 8. Desenvolvido por
-<img src= "https://media1.tenor.com/images/8b6c34504e2855d9a19a5b168155f3d6/tenor.gif?itemid=16327495" width="60" height="60" />
-
-👩🏻‍💻 [Gabriela Silva](https://github.com/gabrielasilva1991)
-
-👩🏾‍💻 [Mayara Oliveira](https://github.com/apretamayara)
+[Gabriela Silva](https://github.com/gabrielasilva1991)

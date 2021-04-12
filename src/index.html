@@ -12,29 +12,28 @@
     <div id="root"></div>
    
     <header class="title">
-      <img src= "img/pokemon-logo-1.jpg" alt="some text" id="logo"/>
+      <img src= "image/pokemonlogo.jpg" alt="some text" id="logo"/>
     </header>
      
-    <main class="flex-container">
-      <section class="pesquisar-pokemon">
-        
-        <select class="ordenar" id="ordenar-pokemon">
+    <main class="flex-container">      
+      <section class="campos-pesquisa">
+        <div>
+          <select class="ordenar-pokemon" id="ordenar-pokemon">
           <option value=" ">Ordenar por</option>
           <option value="numero-crescente">Ordenar de 01 a 251 </option>
           <option value="numero-decrescente">Ordenar de 251 a 01 </option>
           <option value="nome-crescente">Ordenar de A - Z </option> 
           <option value="nome-decrescente">Ordenar de Z - A </option>
-        </select>
-
-        <div class="div-busca">
-          <form action="" method="submit" class="pesquisar">
-            <input type="search" id="buscar-pokemon" placeholder="Buscar..."/>
-            <button type="submit" id="buscar-poke">Buscar</button>
-          </form>
+          </select>
         </div>
-
+        
+        <form action="" method="submit">
+          <input type="search" class="pesquisar-input" id="buscar-pokemon" placeholder="Buscar..."/>
+          <button type="submit" class="pesquisar-button" id="buscar-poke">Buscar</button>
+        </form>
+        
         <select class="ordenar-tipo" id="ordenar-tipo">
-          <option value=" ">Selecionar por Tipo</option>
+          <option disabled selected value=" ">Selecionar por Tipo</option>
           <option value="water">Água</option>
           <option value="dragon">Dragão</option>
           <option value="electric">Elétrico</option>
@@ -55,12 +54,14 @@
           <option value="flying">Voador</option>             
         </select>
 
-        <button type="reset" class="recarregar-pagina" id="recarregar-pagina">Limpar Pesquisa</button>
-
+        <button type="reset" class="limpar-pesquisa" id="recarregar-pagina">Limpar Pesquisa</button>
+        
         <div class="calculo" id="calculo-agregado"></div>
 
+      </section>
+      
+      <section>
         <div class="cards" id="mostrar-cards"></div>
-
       </section>
 
     </main>
@@ -68,7 +69,7 @@
     <footer>
       <ul class="rodape"> <strong>Desenvolvido por</strong>
         <a href="https://github.com/gabrielasilva1991" target="_blank"><strong>Gabriela Silva</strong></a>
-        <a href="https://github.com/apretamayara" target="_blank"><strong>Mayara Oliveira</strong></a> 
+        <label><strong> na </strong></label>
         <a href="https://www.laboratoria.la/" target="_blank"><strong>Laboratória</strong></a>
       </ul>
     </footer>
